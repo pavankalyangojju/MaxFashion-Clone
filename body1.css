@@ -1,0 +1,82 @@
+#category {
+  /* height: 460px; */
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+#catImg {
+  cursor: pointer;
+  height: 180px;
+}
+
+.p {
+  padding-left: 6%;
+  font-size: 30px;
+}
+#catText {
+  text-align: center;
+  font-weight: bold;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 400px) {
+  #category {
+    /* height: 460px; */
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+#party {
+  width: 90%;
+  margin: auto;
+}
+#party > img {
+  width: 100%;
+  cursor: pointer;
+}
+#seasonDiv {
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: space-around;
+}
+@media only screen and (min-width: 0px) and (max-width: 400px) {
+  #seasonDiv {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.seasonImg {
+  width: 90%;
+  margin-left: 8%;
+  cursor: pointer;
+}
+
+#shopbyC {
+  width: 95%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+@media only screen and (min-width: 0px) and (max-width: 400px) {
+  #shopbyC {
+    width: 95%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  #winter {
+    width: 100%;
+  }
+}
+.shopByImg {
+  width: 40%;
+}
+.toCursor {
+  cursor: pointer;
+}
