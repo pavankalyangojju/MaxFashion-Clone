@@ -1,13 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=h1, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    <h1>Body</h1>
-    <h2>Lodin</h2>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=h1, initial-scale=1.0" />
+  <title>Document</title>
+  <style>
+    #slider {
+      width: 80%;
+      height: 400px;
+      margin: auto;
+      border: 1px solid red;
+      background-image: url('https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/MAX-Friday/MAX2.O/MAX-Banner1-desktop-Women-08Dec2021.gif');
+      background-size: 100% 100%;
+      animation: slider 15s infinite ease-out;
+    }
+
+    @keyframes slider {
+      0% {
+        background-image: url('https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/MAX-Friday/MAX2.O/MAX-Banner1-desktop-Women-08Dec2021.gif');
+      }
+
+      25% {
+        background-image: url('https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/MAX-Friday/MAX2.O/MAX-Banner2-desktop-Women-08Dec2021.jpg');
+      }
+
+      50% {
+        background-image: url('https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/MAX-Friday/MAX2.O/MAX-Banner3-desktopp-Women-08Dec2021.jpg');
+      }
+
+      75% {
+        background-image: url('https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/MAX-Friday/MAX2.O/MAX-Banner4-desktop-Women-08Dec2021.jpg');
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="slider"></div>
+</body>
+
 </html>
