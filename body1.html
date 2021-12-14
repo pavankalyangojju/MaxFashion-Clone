@@ -1,14 +1,252 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=h1, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="body1.css" />
-  </head>
-  <body>
-    <!-- shop by   Category  -->
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=h1, initial-scale=1.0" />
+  <title>Document</title>
+  <style>
+    h1 {
+      font-family: 'proxima_nova_rgregular';
+      font-weight: 400;
+      font-size: 30px;
+    }
+
+    #slider {
+      width: 90%;
+      height: 400px;
+      margin: auto;
+      background-image: url('https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/MAX-Friday/MAX2.O/MAX-Banner1-desktop-Women-08Dec2021.gif');
+      background-size: 100% 100%;
+      animation: slider 15s infinite linear;
+    }
+
+    #budgetzone {
+      width: 90%;
+      height: 450px;
+      margin: auto;
+      /* border: 1px solid blue; */
+    }
+
+    #budgetzone>div:nth-child(2) {
+      /* border: 1px solid red; */
+      height: 80%;
+      display: flex;
+      gap: 10px;
+    }
+
+    #budgetzone>div>div {
+      /* border: 1px solid blue; */
+      height: 100%;
+      width: 35%;
+    }
+
+    .smallbanner {
+      width: 90%;
+      margin: auto;
+      /* border: 1px solid red; */
+      height: 300px;
+    }
+
+    .smallbanner>div:nth-child(2) {
+      height: 75%;
+    }
+
+    .img {
+      width: 100%;
+      height: 100%;
+    }
+
+    #trendalert {
+      height: 400px;
+    }
+
+    .twobanners {
+      /* border: 1px solid red; */
+      margin: auto;
+      width: 90%;
+      height: 750px;
+    }
+
+    .twobanners>div:nth-child(2) {
+      display: flex;
+      height: 80%;
+      /* border: solid 1px blue; */
+      gap: 20px;
+
+    }
+
+    .twobanners>div>div {
+      /* border: 1px solid greenyellow; */
+      width: 50%;
+    }
+
+    #contactbanner {
+      height: 400px;
+    }
+
+    /* Font style */
+    @font-face {
+      font-family: 'proxima_nova_rgregular';
+      src: url('https://litmus.com/fonts/Emails/proximanova-regular-webfont.eot');
+      src: url('https://litmus.com/fonts/Emails/proximanova-regular-webfont.eot?#iefix') format('embedded-opentype'),
+        url('https://litmus.com/fonts/Emails/proximanova-regular-webfont.woff') format('woff'),
+        url('https://litmus.com/fonts/Emails/proximanova-regular-webfont.ttf') format('truetype'),
+        url('https://litmus.com/fonts/Emails/proximanova-regular-webfont.svg#proxima_nova_rgregular') format('svg');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'proxima_nova_rgbold';
+      src: url('https://litmus.com/fonts/Emails/proximanova-bold-webfont.eot');
+      src: url('https://litmus.com/fonts/Emails/proximanova-bold-webfont.eot?#iefix') format('embedded-opentype'),
+        url('https://litmus.com/fonts/Emails/proximanova-bold-webfont.woff') format('woff'),
+        url('https://litmus.com/fonts/Emails/proximanova-bold-webfont.ttf') format('truetype'),
+        url('https://litmus.com/fonts/Emails/proximanova-bold-webfont.svg#proxima_nova_rgbold') format('svg');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    /* Font style ends */
+
+    /* Animation starts */
+    @keyframes slider {
+      0% {
+        background-image: url('https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/MAX-Friday/MAX2.O/MAX-Banner1-desktop-Women-08Dec2021.gif');
+      }
+
+      25% {
+        background-image: url('https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/MAX-Friday/MAX2.O/MAX-Banner2-desktop-Women-08Dec2021.jpg');
+      }
+
+      50% {
+        background-image: url('https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/MAX-Friday/MAX2.O/MAX-Banner3-desktopp-Women-08Dec2021.jpg');
+      }
+
+      75% {
+        background-image: url('https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/MAX-Friday/MAX2.O/MAX-Banner4-desktop-Women-08Dec2021.jpg');
+      }
+    }
+
+    /* animation ends */
+  </style>
+</head>
+
+<body>
+  <div id="slider"></div>
+  <div id="budgetzone">
+    <div>
+      <h1>Budget Zone</h1>
+    </div>
+    <div>
+      <div>
+        <img class="img"
+          src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/MAX-Friday/MAX2.O/desktop-modularblock19One-Women-08Dec2021.jpg" />
+      </div>
+      <div>
+        <img class="img"
+          src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/MAX-Friday/MAX2.O/desktop-modularblock19Two-Women-08Dec2021.jpg" />
+      </div>
+      <div>
+        <img class="img"
+          src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/MAX-Friday/MAX2.O/desktop-modularblock19Three-Women-08Dec2021.jpg" />
+      </div>
+
+    </div>
+  </div>
+  <div class="smallbanner">
+    <div>
+      <h1>Max Loves</h1>
+    </div>
+    <div><img class="img"
+        src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/MAX-Friday/MAX2.O/desktop-modularblock13One-Women-25Nov2021.jpg" />
+    </div>
+  </div>
+  <div class="smallbanner">
+    <div>
+      <h1>Gift Zone</h1>
+    </div>
+    <div><img class="img"
+        src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/MAX-Friday/MAX2.O/desktop-department-modularblock-oneBythree-A-Women-25Nov2021.jpg" />
+    </div>
+  </div>
+  <div class="smallbanner" id="trendalert">
+    <div>
+      <h1>Trend Alert</h1>
+    </div>
+    <div><img class="img"
+        src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/MAX-Friday/MAX2.O/desktop-department-10modularblock-oneBythree-A-Women-26Oct2021.jpg" />
+    </div>
+  </div>
+  <div class="smallbanner">
+    <div>
+      <h1>Youth Store</h1>
+    </div>
+    <div><img class="img"
+        src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/MAX-Friday/MAX2.O/desktop-department-5modularblock-oneBytwo1C-Women-18Nov2021.jpg" />
+    </div>
+  </div>
+  <div class="twobanners">
+    <div>
+      <h1>Essential Corner</h1>
+    </div>
+    <div>
+      <div><img class="img"
+          src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/MAX-Friday/MAX2.O/desktop-modularblock23One-Women-25Nov2021.jpg" />
+      </div>
+      <div>
+        <img class="img"
+          src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/MAX-Friday/MAX2.O/desktop-modularblock23Two-Women-25Nov2021.jpg" />
+      </div>
+    </div>
+  </div>
+  <div class="twobanners">
+    <div>
+      <h1>Winter Must Haves</h1>
+    </div>
+    <div>
+      <div><img class="img"
+          src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/MAX-Friday/MAX2.O/desktop-modularblock16One-Women-26Oct2021.jpg" />
+      </div>
+      <div>
+        <img class="img"
+          src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/MAX-Friday/MAX2.O/desktop-modularblock16Two-Women-26Oct2021.jpg" />
+      </div>
+    </div>
+  </div>
+  <div class="twobanners">
+    <div>
+      <h1>Shades Of Winter</h1>
+    </div>
+    <div>
+      <div><img class="img"
+          src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/MAX-Friday/MAX2.O/desktop-modularblock17One-Women-26Oct2021.jpg" />
+      </div>
+      <div>
+        <img class="img"
+          src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/MAX-Friday/MAX2.O/desktop-modularblock17Two-Women-26Oct2021.jpg" />
+      </div>
+    </div>
+  </div>
+  <div class="smallbanner">
+    <div>
+      <h1>Gifting Zone</h1>
+    </div>
+    <div><img class="img"
+        src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/MAX-Friday/MAX2.O/desktop-modularblock14One-Women-26Oct2021.jpg" />
+    </div>
+  </div>
+  <div class="smallbanner" id="contactbanner">
+    <div>
+      <h1>Contact With Us</h1>
+    </div>
+    <div><img class="img"
+        src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/MAX-Friday/MAX2.O/desktop-department-modularblock8-oneBythree-A-Women-21Oct2020.jpg" />
+    </div>
+  </div>
+<!-- Srinidhi part   -->
+  <div> <!-- shop by   Category  -->
     <p class="p">Shop By Category</p>
     <div id="category"></div>
     <hr />
@@ -73,3 +311,7 @@
 </html>
 
 <script src="body1.js"></script>
+  </div>
+</body>
+
+</html>
