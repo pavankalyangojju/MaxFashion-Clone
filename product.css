@@ -50,4 +50,13 @@
   font-size: 100%;
   border-radius: 5px;
 }
+#productDivSpecific > img :hover :nth-child(-1) {
+  display: block;
+}
+#productDivSpecific:hover #buttonproduct {
+  display: block;
+}
+#buttonproduct {
+  display: none;
+}
 /* FOOTER SECTION  */

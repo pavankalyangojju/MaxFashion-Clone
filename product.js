@@ -119,6 +119,7 @@ dataOfProduct.map(function (ele) {
   productDiv.setAttribute("id", "productDivSpecific");
 
   var productImg = document.createElement("img");
+  productImg.setAttribute("id", "hovering");
   productImg.setAttribute("src", ele.proudimg);
 
   var proudprice = document.createElement("h2");
