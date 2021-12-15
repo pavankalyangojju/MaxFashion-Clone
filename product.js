@@ -208,3 +208,4 @@ dataOfProduct.map(function (ele) {
 });
 
 //  FOOTER SECTION
+
