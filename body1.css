@@ -1,5 +1,77 @@
+/* header */
+.head1 {
+  width: 100%;
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  color: white;
+  font-family: sans-serif;
+}
+
+.head1 > div:first-child {
+  display: flex;
+  margin: 20px;
+}
+
+.head1 > div:first-child > div {
+  margin: 5px 10px;
+}
+
+.head1 > div:last-child {
+  display: flex;
+}
+
+.head1 > div:last-child > div {
+  margin: 5px 10px;
+}
+
+#head {
+  background-color: #f7f8f7;
+  color: black;
+}
+
+button {
+  background-color: black;
+  color: white;
+  border: 0px;
+}
+
+#head > div > button {
+  background-color: white;
+  color: black;
+}
+
+#offer {
+  background-color: blue;
+  color: white;
+  text-align: center;
+  padding: 5px;
+}
+
+#head {
+  display: flex;
+  justify-content: space-between;
+}
+
+.max {
+  display: flex;
+  align-items: center;
+}
+
+.max > input {
+  height: 10px;
+  align-items: center;
+}
+
+.border {
+  background-color: grey;
+  width: 1px;
+  height: 13px;
+}
+/* body  part*/
 #category {
-  /* height: 460px; */
   width: 90%;
   margin: auto;
   display: grid;
@@ -83,7 +155,7 @@
 }
 /* Vineeth Part Start */
 .h1 {
-  font-family: 'proxima_nova_rgregular';
+  font-family: "proxima_nova_rgregular";
   font-weight: 400;
   font-size: 30px;
 }
@@ -92,7 +164,7 @@
   width: 90%;
   height: 400px;
   margin: auto;
-  background-image: url('https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/MAX-Friday/MAX2.O/MAX-Banner1-desktop-Common-14Dec2021.gif');
+  background-image: url("https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/MAX-Friday/MAX2.O/MAX-Banner1-desktop-Common-14Dec2021.gif");
   background-size: 100% 100%;
   animation: slider 15s infinite linear;
 }
@@ -104,14 +176,14 @@
   /* border: 1px solid blue; */
 }
 
-#budgetzone>div:nth-child(2) {
+#budgetzone > div:nth-child(2) {
   /* border: 1px solid red; */
   height: 80%;
   display: flex;
   gap: 10px;
 }
 
-#budgetzone>div>div {
+#budgetzone > div > div {
   /* border: 1px solid blue; */
   height: 100%;
   width: 35%;
@@ -124,7 +196,7 @@
   height: 300px;
 }
 
-.smallbanner>div:nth-child(2) {
+.smallbanner > div:nth-child(2) {
   height: 75%;
 }
 
@@ -145,15 +217,14 @@
   height: 750px;
 }
 
-.twobanners>div:nth-child(2) {
+.twobanners > div:nth-child(2) {
   display: flex;
   height: 80%;
   /* border: solid 1px blue; */
   gap: 20px;
-
 }
 
-.twobanners>div>div {
+.twobanners > div > div {
   /* border: 1px solid greenyellow; */
   width: 50%;
 }
@@ -161,29 +232,37 @@
 #contactbanner {
   height: 400px;
 }
-.font{
-  font-family: 'proxima_nova_rgregular';
+.font {
+  font-family: "proxima_nova_rgregular";
 }
 
 /* Font style */
 @font-face {
-  font-family: 'proxima_nova_rgregular';
-  src: url('https://litmus.com/fonts/Emails/proximanova-regular-webfont.eot');
-  src: url('https://litmus.com/fonts/Emails/proximanova-regular-webfont.eot?#iefix') format('embedded-opentype'),
-    url('https://litmus.com/fonts/Emails/proximanova-regular-webfont.woff') format('woff'),
-    url('https://litmus.com/fonts/Emails/proximanova-regular-webfont.ttf') format('truetype'),
-    url('https://litmus.com/fonts/Emails/proximanova-regular-webfont.svg#proxima_nova_rgregular') format('svg');
+  font-family: "proxima_nova_rgregular";
+  src: url("https://litmus.com/fonts/Emails/proximanova-regular-webfont.eot");
+  src: url("https://litmus.com/fonts/Emails/proximanova-regular-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://litmus.com/fonts/Emails/proximanova-regular-webfont.woff")
+      format("woff"),
+    url("https://litmus.com/fonts/Emails/proximanova-regular-webfont.ttf")
+      format("truetype"),
+    url("https://litmus.com/fonts/Emails/proximanova-regular-webfont.svg#proxima_nova_rgregular")
+      format("svg");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'proxima_nova_rgbold';
-  src: url('https://litmus.com/fonts/Emails/proximanova-bold-webfont.eot');
-  src: url('https://litmus.com/fonts/Emails/proximanova-bold-webfont.eot?#iefix') format('embedded-opentype'),
-    url('https://litmus.com/fonts/Emails/proximanova-bold-webfont.woff') format('woff'),
-    url('https://litmus.com/fonts/Emails/proximanova-bold-webfont.ttf') format('truetype'),
-    url('https://litmus.com/fonts/Emails/proximanova-bold-webfont.svg#proxima_nova_rgbold') format('svg');
+  font-family: "proxima_nova_rgbold";
+  src: url("https://litmus.com/fonts/Emails/proximanova-bold-webfont.eot");
+  src: url("https://litmus.com/fonts/Emails/proximanova-bold-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://litmus.com/fonts/Emails/proximanova-bold-webfont.woff")
+      format("woff"),
+    url("https://litmus.com/fonts/Emails/proximanova-bold-webfont.ttf")
+      format("truetype"),
+    url("https://litmus.com/fonts/Emails/proximanova-bold-webfont.svg#proxima_nova_rgbold")
+      format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -193,21 +272,157 @@
 /* Animation starts */
 @keyframes slider {
   0% {
-    background-image: url('https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/MAX-Friday/MAX2.O/MAX-Banner1-desktop-Common-14Dec2021.gif');
+    background-image: url("https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/MAX-Friday/MAX2.O/MAX-Banner1-desktop-Common-14Dec2021.gif");
   }
 
   25% {
-    background-image: url('https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/MAX-Friday/MAX2.O/MAX-Banner2-desktop-Women-08Dec2021.jpg');
+    background-image: url("https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/MAX-Friday/MAX2.O/MAX-Banner2-desktop-Women-08Dec2021.jpg");
   }
 
   50% {
-    background-image: url('https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/MAX-Friday/MAX2.O/MAX-Banner3-desktopp-Women-08Dec2021.jpg');
+    background-image: url("https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/MAX-Friday/MAX2.O/MAX-Banner3-desktopp-Women-08Dec2021.jpg");
   }
 
   75% {
-    background-image: url('https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/MAX-Friday/MAX2.O/MAX-Banner4-desktop-Women-08Dec2021.jpg');
+    background-image: url("https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/MAX-Friday/MAX2.O/MAX-Banner4-desktop-Women-08Dec2021.jpg");
   }
 }
 
 /* animation ends */
 /* Vineeth Part Ends */
+
+/* footer */
+#Subscribe {
+  display: flex;
+  justify-content: space-around;
+}
+#apples {
+  height: 60px;
+  width: 150px;
+  margin-bottom: 2.5px;
+}
+#plays {
+  height: 70px;
+  width: 150px;
+  margin-top: 2px;
+}
+#cat {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 50px;
+}
+#catt {
+  display: flex;
+  /* padding: 100px; */
+  margin-left: 170px;
+  width: 420px;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+.cont {
+  width: 50px;
+  height: 40px;
+  padding: 10px;
+}
+#contact {
+  display: flex;
+  width: 70%;
+  justify-content: space-between;
+  margin-left: 145px;
+}
+.social {
+  width: 40px;
+  height: 40px;
+}
+.contu {
+  display: flex;
+  justify-content: space-between;
+}
+#social2 {
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+}
+.line {
+  line-height: 1px;
+}
+h5 {
+  font-size: 17px;
+}
+p {
+  color: #889878;
+}
+#Subscribe > div > p {
+  font-size: 18px;
+}
+h3 {
+  font-size: 22px;
+}
+input {
+  height: 50px;
+  width: 300px;
+  font-size: 20px;
+}
+#btn {
+  height: 60px;
+  width: 150px;
+  background-color: black;
+  color: white;
+  padding: auto;
+  border-radius: 5px;
+  font-size: 20px;
+}
+td {
+  border: 0.1px solid black;
+  width: 150px;
+  height: 20px;
+  padding: auto;
+  text-align: center;
+}
+table {
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 600px) {
+  #cat {
+    display: none;
+  }
+  #catt {
+    display: none;
+  }
+  #hide {
+    display: none;
+  }
+  #contact {
+    display: none;
+  }
+
+  .mid {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  hr {
+    display: none;
+  }
+  .contu {
+    display: none;
+  }
+  .line {
+    display: none;
+  }
+  #logo {
+    display: grid;
+  }
+}
+@media only screen and (min-width: 600px) {
+  #tab {
+    display: none;
+  }
+  #last {
+    display: flex;
+    margin-left: 120px;
+    margin-top: 25px;
+  }
+}
