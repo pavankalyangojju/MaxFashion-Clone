@@ -48,8 +48,8 @@
   font-size: 20px;
 }
 #productDivSpecific > img {
-  height: 430px;
-  width: 90%;
+  height: 400px;
+  width: 100%;
 }
 #productDivSpecific {
   line-height: 40%;
@@ -59,7 +59,8 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   /* justify-content: space-evenly; */
-  padding-left: 2%;
+  /* padding-left: 2%; */
+  grid-gap: 3%;
 }
 
 #buttonproduct {
@@ -70,13 +71,12 @@
   font-size: 100%;
   border-radius: 5px;
 }
-#productDivSpecific > img :hover :nth-child(-1) {
-  display: block;
-}
+
 #productDivSpecific:hover #buttonproduct {
   display: block;
 }
 #buttonproduct {
   display: none;
 }
+
 /* FOOTER SECTION  */
