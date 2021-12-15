@@ -1,0 +1,79 @@
+/* HEADER  SECTION   */
+
+/* SORTING SECTION  */ /* SORTING SECTION  */
+#mainsorting {
+  background-color: #f7f8f7;
+}
+
+.sortdiv {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 20px;
+  padding: 10px 10px;
+}
+
+.box {
+  padding: 10px;
+  border: none;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+/* PRODUCT DISPLAY SECTION  */
+#productsort {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 1%;
+  margin-right: 1%;
+}
+#sortingtheproduct {
+  display: flex;
+  width: 24%;
+  /* border: 1px solid red; */
+  justify-content: space-evenly;
+}
+#sortInsec {
+  width: 70%;
+  height: 50%;
+  margin-top: 4%;
+}
+#sortingtheproduct > p {
+  padding-bottom: 5%;
+  font-size: 20px;
+}
+#productsort > p {
+  font-size: 20px;
+}
+#productDivSpecific > img {
+  height: 400px;
+  width: 100%;
+}
+
+#productDivSpecific {
+  line-height: 40%;
+  margin-bottom: 10%;
+}
+#allProduct {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /* justify-content: space-evenly; */
+  /* padding-left: 2%; */
+  grid-gap: 3%;
+}
+
+#buttonproduct {
+  width: 90%;
+  height: 7%;
+  background-color: #303ab2;
+  color: white;
+  font-size: 100%;
+  border-radius: 5px;
+}
+
+#productDivSpecific:hover #buttonproduct {
+  display: block;
+}
+#buttonproduct {
+  display: none;
+}
+
+/* FOOTER SECTION  */
