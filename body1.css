@@ -1,5 +1,4 @@
 #category {
-  /* height: 460px; */
   width: 90%;
   margin: auto;
   display: grid;
@@ -83,7 +82,7 @@
 }
 /* Vineeth Part Start */
 .h1 {
-  font-family: 'proxima_nova_rgregular';
+  font-family: "proxima_nova_rgregular";
   font-weight: 400;
   font-size: 30px;
 }
@@ -92,7 +91,7 @@
   width: 90%;
   height: 400px;
   margin: auto;
-  background-image: url('https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/MAX-Friday/MAX2.O/MAX-Banner1-desktop-Common-14Dec2021.gif');
+  background-image: url("https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/MAX-Friday/MAX2.O/MAX-Banner1-desktop-Common-14Dec2021.gif");
   background-size: 100% 100%;
   animation: slider 15s infinite linear;
 }
@@ -104,14 +103,14 @@
   /* border: 1px solid blue; */
 }
 
-#budgetzone>div:nth-child(2) {
+#budgetzone > div:nth-child(2) {
   /* border: 1px solid red; */
   height: 80%;
   display: flex;
   gap: 10px;
 }
 
-#budgetzone>div>div {
+#budgetzone > div > div {
   /* border: 1px solid blue; */
   height: 100%;
   width: 35%;
@@ -124,7 +123,7 @@
   height: 300px;
 }
 
-.smallbanner>div:nth-child(2) {
+.smallbanner > div:nth-child(2) {
   height: 75%;
 }
 
@@ -145,15 +144,14 @@
   height: 750px;
 }
 
-.twobanners>div:nth-child(2) {
+.twobanners > div:nth-child(2) {
   display: flex;
   height: 80%;
   /* border: solid 1px blue; */
   gap: 20px;
-
 }
 
-.twobanners>div>div {
+.twobanners > div > div {
   /* border: 1px solid greenyellow; */
   width: 50%;
 }
@@ -161,29 +159,37 @@
 #contactbanner {
   height: 400px;
 }
-.font{
-  font-family: 'proxima_nova_rgregular';
+.font {
+  font-family: "proxima_nova_rgregular";
 }
 
 /* Font style */
 @font-face {
-  font-family: 'proxima_nova_rgregular';
-  src: url('https://litmus.com/fonts/Emails/proximanova-regular-webfont.eot');
-  src: url('https://litmus.com/fonts/Emails/proximanova-regular-webfont.eot?#iefix') format('embedded-opentype'),
-    url('https://litmus.com/fonts/Emails/proximanova-regular-webfont.woff') format('woff'),
-    url('https://litmus.com/fonts/Emails/proximanova-regular-webfont.ttf') format('truetype'),
-    url('https://litmus.com/fonts/Emails/proximanova-regular-webfont.svg#proxima_nova_rgregular') format('svg');
+  font-family: "proxima_nova_rgregular";
+  src: url("https://litmus.com/fonts/Emails/proximanova-regular-webfont.eot");
+  src: url("https://litmus.com/fonts/Emails/proximanova-regular-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://litmus.com/fonts/Emails/proximanova-regular-webfont.woff")
+      format("woff"),
+    url("https://litmus.com/fonts/Emails/proximanova-regular-webfont.ttf")
+      format("truetype"),
+    url("https://litmus.com/fonts/Emails/proximanova-regular-webfont.svg#proxima_nova_rgregular")
+      format("svg");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'proxima_nova_rgbold';
-  src: url('https://litmus.com/fonts/Emails/proximanova-bold-webfont.eot');
-  src: url('https://litmus.com/fonts/Emails/proximanova-bold-webfont.eot?#iefix') format('embedded-opentype'),
-    url('https://litmus.com/fonts/Emails/proximanova-bold-webfont.woff') format('woff'),
-    url('https://litmus.com/fonts/Emails/proximanova-bold-webfont.ttf') format('truetype'),
-    url('https://litmus.com/fonts/Emails/proximanova-bold-webfont.svg#proxima_nova_rgbold') format('svg');
+  font-family: "proxima_nova_rgbold";
+  src: url("https://litmus.com/fonts/Emails/proximanova-bold-webfont.eot");
+  src: url("https://litmus.com/fonts/Emails/proximanova-bold-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://litmus.com/fonts/Emails/proximanova-bold-webfont.woff")
+      format("woff"),
+    url("https://litmus.com/fonts/Emails/proximanova-bold-webfont.ttf")
+      format("truetype"),
+    url("https://litmus.com/fonts/Emails/proximanova-bold-webfont.svg#proxima_nova_rgbold")
+      format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -193,19 +199,19 @@
 /* Animation starts */
 @keyframes slider {
   0% {
-    background-image: url('https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/MAX-Friday/MAX2.O/MAX-Banner1-desktop-Common-14Dec2021.gif');
+    background-image: url("https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/MAX-Friday/MAX2.O/MAX-Banner1-desktop-Common-14Dec2021.gif");
   }
 
   25% {
-    background-image: url('https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/MAX-Friday/MAX2.O/MAX-Banner2-desktop-Women-08Dec2021.jpg');
+    background-image: url("https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/MAX-Friday/MAX2.O/MAX-Banner2-desktop-Women-08Dec2021.jpg");
   }
 
   50% {
-    background-image: url('https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/MAX-Friday/MAX2.O/MAX-Banner3-desktopp-Women-08Dec2021.jpg');
+    background-image: url("https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/MAX-Friday/MAX2.O/MAX-Banner3-desktopp-Women-08Dec2021.jpg");
   }
 
   75% {
-    background-image: url('https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/MAX-Friday/MAX2.O/MAX-Banner4-desktop-Women-08Dec2021.jpg');
+    background-image: url("https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/MAX-Friday/MAX2.O/MAX-Banner4-desktop-Women-08Dec2021.jpg");
   }
 }
 
