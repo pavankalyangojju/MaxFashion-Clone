@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+     <style>
+         body{
+            background: linear-gradient(115deg,#56d8e4,#4158d0);
+            height: 100vh;
+            width: 100%;
+         }
+            .total{
+               position: absolute;
+               top:50%;
+               left: 50%;
+               transform: translate(-50%,-50%);
+                width: 500px;
+                height: 500px;
+                margin: 100px auto;
+                top: 50%;
+                left: 50%;
+
+               
+                
+                
+               
+            }
+             #email,#mobile,#password,#hr,#submit{
+                    display: block;
+                     padding: 10px;
+                     margin-left:25%;
+                     margin: 10px;
+
+
+             }
+             .total>div{
+                 margin: auto;
+                
+                 
+                 
+             }
+     </style>
+</head>
+<body>
+           <div class="total">
+
+                       <h1>Create your account & Signup</h1>
+                  <div>
+                    <form id="form">
+                       <input id="email" type="email" placeholder="EMAIL">
+                       <input id="mobile" type ="number" placeholder="enter six digit otp">
+                       <input id="password" type ="password" placeholder=" set password"> 
+                        
+                     
+                       <input id="submit" type="submit">
+                      
+                    </form>
+                      
+                  </div>
+           </div>
+</body>
+</html>
+  <script>
+                document.querySelector("#form").addEventListener("submit",work)
+                  var signarray= JSON.parse( localStorage.getItem("signarray"))||[];
+                  console.log(signarray)
+               var check=[];
+                  alert(" USe code for 033518 for verifying your mobile number with Maxfashion.com. OTP is valid for 5 minutes(s) ")
+                  
+                 function work(event)
+                 {
+                        event.preventDefault();
+                           var email=document.querySelector("#email").value;
+                           var mobile=document.querySelector("#mobile").value;
+                           var password=document.querySelector("#password").value;
+                           
+
+                            var signobject={
+                                emaild:email,
+                                mobiles:mobile,
+                                passwords:password,
+                            }
+                             if(signobject.passwords!="" && signobject.emaild!="" && signobject.mobiles!=="")
+                             {
+                           signarray.push(signobject)
+                             }
+                           localStorage.setItem("signarray",JSON.stringify( signarray));
+                           
+                              
+
+                          
+                            
+                                            }
+                                         
+                            document.querySelector("#form").addEventListener("submit",go)
+                           
+                           
+                             function go(event)
+                             {
+                                var mobile=document.querySelector("#mobile").value;
+                                if(mobile=="033518")
+                                {
+
+                                 window.location.href="signinn.html";
+                                }
+                                else
+                                {
+                                    alert("wrong otp")
+                                }
+                             }
+
+                
+
+  </script>

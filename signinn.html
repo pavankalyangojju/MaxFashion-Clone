@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+          body{
+            background: linear-gradient(115deg,#56d8e4,#4158d0);
+            height: 100vh;
+            width: 100%;
+         }
+            #total{
+               position: absolute;
+               top:50%;
+               left: 50%;
+               transform: translate(-50%,-50%);
+                width: 300px;
+                height: 500px;
+                margin: 100px auto;
+                top: 50%;
+                left: 50%;
+               
+
+               
+                
+                
+               
+            }
+    #total>input{
+         
+         margin: 10px;
+    }
+     #total button{
+          margin: 10px;
+          width: 40%;
+          margin-left: 15%;
+          background-color: teal;
+     } 
+     #signinpart{
+         
+     }
+   
+</style>
+</head>
+<body>            <div id="signinpart">
+                   <div id="total" >
+                       <h1>Login </h1>
+                       <input  id="email" type="email" placeholder="Enter regeisterd email">
+                       <br>
+                       <input id="password" type ="password" placeholder="Enter password"></input>
+                       <br>
+                      <button id="signup" type="submit" placeholder="signup"> Signup</button>
+                      <h1></h1>
+                   </div>
+                </div>
+</body>
+</html>
+ 
+ <script>
+                 document.querySelector("button").addEventListener("click",check)
+             
+                    var fetchingdata=JSON.parse( localStorage.getItem("signarray"))||[];
+                          console.log(fetchingdata)
+                          
+                 function check(event)
+                 {
+
+                   
+                     var emails=document.querySelector("#email").value;
+                     var passworrd=document.querySelector("#password").value;
+                     
+                    
+                     var s=true;
+                      
+                      for(var i=0;i<fetchingdata.length;i++)
+                      {
+                          if(fetchingdata[i].passwords==passworrd && fetchingdata[i].emaild==emails)
+                          {
+                               document.querySelector("h1").textContent="sucessfully logined";
+                               s=true;
+                             
+                               window.location.href="add.html";
+                               
+                          }
+                       
+                           else (fetchingdata[i].passwords!==passworrd || fetchingdata[i].emaild!==emails)
+                          {
+                                       s=false;
+                                        
+                          }
+                         
+                       
+                      }
+                        
+                      if(s==false)
+                      {
+                        document.querySelector("h1").textContent="";
+                        alert("does not match");
+                      
+                      }
+                 }
+
+ </script>
