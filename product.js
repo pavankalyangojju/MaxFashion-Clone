@@ -95,6 +95,19 @@ var dataOfProduct = [
     productpromotions: "Max300",
     productDiscount: "60% above",
   },
+  {
+    proudimg:
+      "https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010503266-Blue-Aqua-1000010503266-11232021_01-2100.jpg",
+    produPrice: "₹599",
+    prodDesc: "MAX Printed Round Neck Sweatshirt",
+    productcolor: "blue",
+    producttype: "Hoddie",
+    productdesgine: "printed",
+    productSleveLength: "Full Sleves",
+    Browse: "Online Only",
+    productpromotions: "Max300",
+    productDiscount: "20% above",
+  },
 ];
 var count = document.querySelector("#countProduct");
 var ProductTotal = dataOfProduct.length;
