@@ -1,164 +1,390 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+         *{
+                               
+                               outline: none;
+                               box-sizing: border-box;
+                               font-family: sans-serif;
+                               font-size: small;
+                           }
+       
+        .overlay{
+            border: 1px solid red;
+              position: fixed;
+              top: 0px;
+              left: 0px;
+              width: 200vw;
+              height: 100vh;
+              background:rgba(0, 0, 0, 0.7);
+             
+             
+            display: none;
+        }
+      .content{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%) scale(0);
+            background: #fff;
+            width: 450px;
+            height:auto;
+           
+            
+            padding: 20px;
+            box-sizing: border-box;
+           
+            
+        }
+         .close-btn{
+            position: absolute;
+            right: 20px;
+            height: 20px;
+        }
+        .yes .overlay{
+      
+            display: block;
+           
+        }
+        .popup.yes .content{
+            /* transition: all 300ms ease-in-out; */
+            transform: translate(-50%,-50%) scale(1);
+        }
+        .insidediv{
+           
+            margin: auto 20px;
+        }
+        .mobilenumber>div{
+            height: 35px;
+            width: 100%;
+            border: 1px solid rgb(213, 213, 241);
+            display: flex;
+            
+        }
+        .insidediv>p:first-child{
+            font-size: x-large;
+            margin: 0;
+        }
+        .insidediv>p:nth-child(2n){
+            font-size: 10px;
+          
+            
+            color: grey;
+        
+        }
+        .mobilenumber>div>div:first-child{
+            height: 100%;
+            width: 10%;
+          
+            display: flex;
+            align-items: center;
+        }
+        .mobilenumber>div>div:nth-child(2){
+            
+            margin: 3px;
+          background-color: grey;
+            margin-right: 20px;
+            border: 1px solid ;
+            display: flex;
+            align-items: center;
+        }
+        .mobilenumber input{
+            height: 80%;
+            width: 100%;
+            border: 0px;
+            margin-top: 1%;
+            ;
+        }
+       .content hr{
+            width: 80%;
+            align-self: center;
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+        .content #bottom{
+             
+             height: 35px;
+            
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+           align-items: center;
+        }
+        .content #bottom>div:last-child{
+           
+            background-color:rgb(5, 5, 95);
+            width: 40%;
+            height: 100%;
+            
+
+           
+        }
+        .content #bottom button {
+           border: none;
+          background-color: transparent;
+            height: 100%;
+        
+            
+            text-align: center;
+            color: white;
+            align-items:flex-end;
+        }
+        *{
+            margin: 0%;
+            padding: 0%;
+        }
+          .total{
+              display: flex;
+              width: 100%;
+           
+              justify-content: space-around;
+              background-color: black;
+              color: white;
+              height: 30px;
+              font-family: sans-serif;
+              font-size: 10px;
+              align-items: center;  
+                    
+
+          } 
+       .total>div{
+             
+             display: flex;
+             
+
+            
+
+             
+       }
+       .total>div>div{
+           
+         margin: 5px;
+       
+         height: 20px;
+           
+       }
+       #first>div{
+         
+           
+       }
+       #second{
+           background-color: whitesmoke;
+           color: black;
+           height:40px ;
+       }
+       #third{
+           background-color: white;
+           color: black;
+       }
+       #fourth{
+           background-color: rgb(9, 9, 129);
+           color: white;
+           text-align: center;
+           padding: 5px;
+       }
+
+        
+       @media only  screen and (min-width:0px) and (max-width:600px)
+         {
+            .total{
+                 justify-content: none;
+             }
+           #third{
+               display: none;
+           }
+           #maximage{
+               display: none;
+           }
+           .signupid{
+               display: none;
+           }
+           .displayhere{
+               display: display;
+           }
+         }
+
+        #total{
+            width: auto;
+
+        }
+           
+       }
+       .border{
+           background-color: grey;
+           border: 1px solid;
+           height: 8px !important;
+           margin-top: 100px;
+           border-color: black;
+       }
+       img{
+           width: 100%;
+           height: 100%;
+       }
+       #second>input{
+           height: 50%;
+       }
+       button{
+           height: 50%;
+           font-size: 10px;
+           background-color: white;
+           border: 0px;
+       }
+       #second{
+           grid-area: a;
+       }
+       .b{
+           grid-area: b;
+       }
+
+       @media only  screen and (min-width:0px) and (max-width:600px)
+         {
+            .total{
+                 justify-content: none;
+             }
+           #third{
+               display: none;
+           }
+           #maximage{
+               display: none;
+           }
+           .signupid{
+               display: none;
+           }
+           .displayhere{
+               display: display;
+           }
+         }
+
+    </style>
 </head>
-<style>
-    .head1 {
-
-        width: 100%;
-        height: 30px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background-color: black;
-        color: white;
-        font-family: sans-serif;
-    }
-
-    .head1>div:first-child {
-
-        display: flex;
-        margin: 20px;
-
-    }
-
-    .head1>div:first-child>div {
-
-
-        margin: 5px 10px;
-
-    }
-
-    .head1>div:last-child {
-
-        display: flex;
-
-    }
-
-    .head1>div:last-child>div {
-
-
-        margin: 5px 10px;
-
-    }
-
-    #head {
-        background-color: #f7f8f7;
-        color: black;
-    }
-
-    button {
-        background-color: black;
-        color: white;
-        border: 0px;
-    }
-
-    #head>div>button {
-        background-color: white;
-        color: black;
-    }
-
-    #offer {
-        background-color: blue;
-        color: white;
-        text-align: center;
-        padding: 5px;
-    }
-
-    #head {
-        display: flex;
-        justify-content: space-between;
-
-    }
-
-    .max {
-        display: flex;
-        align-items: center;
-    }
-
-    .max>input {
-        height: 10px;
-        align-items: center;
-
-    }
-
-    .border {
-        background-color: grey;
-        width: 1px;
-        height: 13px;
-    }
-
-    @media only screen and (min-width:0px) and (max-width:375px) {}
-</style>
-
-<body>
-    <div class="head1">
+<body> 
+    
+    <div class="popup" id="popup-1">
+        <div class="overlay"></div>
+        <div class="content"> 
+            
+        <div class="close-btn" onclick="togglepop()">&times;</div>
+        <div class="insidediv">
+        <p>Sign up or Sign in</p><br>
+        <p>Enjoy the convenience of a single account across all participating brands</p><br>
+          
+        <label>Mobile Number</label> <br>
+        <div class="mobilenumber"> 
+            <div>
+           <div> +91</div> 
+           <div></div> 
+           <input type="number" placeholder="Enter your mobile number"></div><br>
+       </div>
+        <p>By creating your account you agree to our <a href="">Terms and condition</a></p><br>
+        <hr><br>
+       <div id="bottom">
         <div>
-            <button>🚛Free Shipping</button>
-            <button>🏪Return To Store</button>
-            <button>🏪Click & Collect</button>
+           login with email? <a href=""> click here</a>
+   </div>
+   <div>
+        <button id="popcontinue">
+       CONTINUE
+           </button>
+   </div>
+   </div>
+       </div>
+   </div>
+   </div>
+   
+     
+       <div id="header">
+         <div class="total" id="first">
+        
+            <div>
+                <div>🚛Free Shipping</div>
+                <div>🏪Return To Store</div>
+                <div>🏪Click & Collect</div>
+            
         </div>
+             
+                <div>
+                    <div>Download our apps</div>
+                      <div class="border"></div>
+                    <div>Store Locator</div>
+                <div class="border"></div>
+                    <div>Help</div>
+                </div>
+           
 
+            </div>  
 
+            <div>
+                <div class="total" id="second">
+                    <div>
+                           <div id="maximage" >
+                            <img src="max.png" width="auto" height="40px"> </img>
+                           </div>
+                         <div> <button id="button" >Women</button></div> 
+                           <div>Men</div>
+                           <div>Girls</div>
+                           <div class="signupid">Boys</div>
+                           <div>
+                             <input class="signupid" class="displayhere" type="text" placeholder="what are you looking for?" >  
+                            </div>
+                         
+                   </div>
+                
+                <div >
+                           <div class="signupid" onclick="togglepop()">Sign Up-Sign In</div>
+                           <div class="signupid" class="border"></div>
+                         
+                           <div class="b">Basket</div>
+                           <div>
+                            <img src="cart.png" width="auto" height="30px"> </img>
+                           </div>
+                </div>
+            </div>
+            <div id="third" class="total">
 
+                  <div>
+                    <div>Tops</div>
+                    <div>Bottoms</div>
+                    <div>Dresses & jumpsuits</div>
+                    <div>Sleepwear</div>
+                    <div>Indianwear</div>
+                    <div>Sportswear</div>
+                    <div>Lingerie</div>
+                    <div>Accessories</div>
+                    <div>Footwear</div>
+                    <div>Winterwear</div>
+                    <div>The Shirt Shop</div>
+                    <div class="border"></div>
+                    <div>More</div>
+                  </div>
 
-        <div>
-            <button>Download our apps</button>
-            <div class="border"></div>
-            <button>Store Locator</button>
-            <div class="border"></div>
-            <button>Help</button>
+            </div>
+            <div id="fourth" >
+                Flat 300  Off on shopping for 2499. Use code:MASAI30>
+            </div>
+
         </div>
-    </div>
-    <div id="head">
-        <div class="max">
-            <img src="max.png" width="auto" height="40px"> </img>
-            <button>Women</button>
-            <button>Men</button>
-            <button>Girls</button>
-            <button>Boys</button>
-            <input type="text" placeholder="Search.." name="search">
-        </div>
-
-        <div class="max">
-            <button type="submit">Sign Up - Sign In </button>
-            <div class="border"></div>
-
-            <button>Basket</button>
-            <button>
-                <img src="cart.png" width="auto" height="30px"> </img>
-            </button>
-
-        </div>
-
-    </div>
-
-    <div id="head" class="head1">
-        <div>
-            <button>Tops</button>
-            <button>Bottoms</button>
-            <button>Dresses & jumpsuits</button>
-            <button>Sleepwear</button>
-            <button>Indianwear</button>
-            <button>Sportswear</button>
-            <button>Lingerie</button>
-            <button>Accessories</button>
-            <button>Footwear</button>
-            <button>Winterwear</button>
-            <button>The Shirt Shop</button>
-            <div class="border"></div>
-            <button>More</button>
-        </div>
-    </div>
-    <div id="offer">
-        Flat 10% off on 2499. Use Code:MASAI30 >
-    </div>
-
+      
 </body>
-
 </html>
+<script>
+          document.querySelector("#button").addEventListener("click",go)
+          function go(){
+              window.location.href="product.html"
+          }
+          function togglepop()
+         {
+             document.querySelector("#popup-1").classList.toggle("yes");
+         }
+         document.querySelector("#popcontinue").addEventListener("click",popcont)
+
+         function popcont()
+         {
+             window.location.href="signin.html"
+         }
+</script>
+
