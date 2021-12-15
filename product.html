@@ -1,42 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="product.css" />
-  </head>
 
-  <body>
-    <!-- HEADER  SECTION  -->
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="product.css" />
+</head>
 
-    <!-- SORTING SECTION -->
+<body>
+  <!-- HEADER  SECTION  -->
 
-    <!-- Srinidhi and Sanjay is line ke uper nahi aana............................................................ -->
+  <!-- SORTING SECTION -->
+  <div id="mainsorting">
+    <div><select>
+        <option>Price</option>
+      </select>
+    </div>
+    <div><select>
+        <option>Type</option>
+        <option value="pullovers">Pullovers</option>
+        <option value="hooded">Hooded</option>
+        <option value="frontopen">Front Open</option>
+      </select>
+    </div>
+  </div>
 
-    <!-- vineet aur pawan iss line is neeche mat aana -->
-    <!-- PRODUCT DISPLAY SECTION -->
+  <!-- Srinidhi and Sanjay is line ke uper nahi aana............................................................ -->
+  <hr>
+  <!-- vineet aur pawan iss line is neeche mat aana -->
+  <!-- PRODUCT DISPLAY SECTION -->
 
-    <div id="productsDis">
-      <div id="productsort">
-        <p>Product</p>
-        <div id="sortingtheproduct">
-          <p>Sort By</p>
-          <select name="" id="sortInsec">
-            <option value="Relevancep">Relevance</option>
-            <option value="NAP">New Arrivals</option>
-            <option value="Discountp">Discount</option>
-            <option value="LTH">Price-Low to High</option>
-            <option value="HTL">Price-High tolow</option>
-            <option value="Alphabetical">Alphabetical</option>
-          </select>
-        </div>
+  <div id="productsDis">
+    <div id="productsort">
+      <p>Product</p>
+      <div id="sortingtheproduct">
+        <p>Sort By</p>
+        <select name="" id="sortInsec">
+          <option value="Relevancep">Relevance</option>
+          <option value="NAP">New Arrivals</option>
+          <option value="Discountp">Discount</option>
+          <option value="LTH">Price-Low to High</option>
+          <option value="HTL">Price-High tolow</option>
+          <option value="Alphabetical">Alphabetical</option>
+        </select>
       </div>
     </div>
+  </div>
 
-    <!-- FOOTER SECTION -->
-  </body>
+  <!-- FOOTER SECTION -->
+</body>
+
 </html>
 
 <script src="product.js"></script>
