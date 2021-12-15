@@ -18,10 +18,6 @@
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
-
-
-
-
 /* PRODUCT DISPLAY SECTION  */
 #productsort {
   display: flex;
@@ -51,6 +47,7 @@
   height: 400px;
   width: 100%;
 }
+
 #productDivSpecific {
   line-height: 40%;
   margin-bottom: 10%;
