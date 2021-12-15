@@ -69,6 +69,7 @@ categoryItem.map(function (ele) {
 
   var image = document.createElement("img");
   image.setAttribute("id", "catImg");
+  // image.setAttribute("class", "img");
   image.setAttribute("src", ele.Image);
 
   var para = document.createElement("p");
@@ -77,4 +78,7 @@ categoryItem.map(function (ele) {
 
   specdiv.append(image, para);
   mainDiv.append(specdiv);
+  document.querySelector(".img").addEventListener("click", function () {
+    window.location.href = "product.html";
+  });
 });

@@ -71,6 +71,7 @@ button {
   height: 13px;
 }
 /* body  part*/
+
 #category {
   width: 90%;
   margin: auto;
@@ -130,7 +131,7 @@ button {
 }
 
 #shopbyC {
-  width: 90%;
+  width: 85%;
   margin: auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -153,6 +154,12 @@ button {
 .toCursor {
   cursor: pointer;
 }
+#specific {
+  /* border: 1pxsolid red; */
+  height: 310px;
+  margin-left: 2%;
+}
+
 /* Vineeth Part Start */
 .h1 {
   font-family: "proxima_nova_rgregular";
