@@ -1,0 +1,30 @@
+/* HEADER  SECTION   */
+
+/* SORTING SECTION  */
+
+/* PRODUCT DISPLAY SECTION  */
+#productsort {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 1%;
+  margin-right: 1%;
+}
+#sortingtheproduct {
+  display: flex;
+  width: 24%;
+  /* border: 1px solid red; */
+  justify-content: space-evenly;
+}
+#sortInsec {
+  width: 70%;
+  height: 50%;
+  margin-top: 4%;
+}
+#sortingtheproduct > p {
+  padding-bottom: 5%;
+  font-size: 20px;
+}
+#productsort > p {
+  font-size: 20px;
+}
+/* FOOTER SECTION  */
