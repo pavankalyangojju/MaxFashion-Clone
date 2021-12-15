@@ -9,7 +9,7 @@
   display: grid;
   grid-template-columns: repeat(6, 200px);
   grid-gap: 20px;
-  padding-top: 20px;
+  padding: 10px 10px;
 }
 
 .box {
