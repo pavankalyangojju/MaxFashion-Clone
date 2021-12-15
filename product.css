@@ -26,6 +26,19 @@
 }
 #productsort > p {
   font-size: 20px;
-  color: red;
+}
+#productDivSpecific > img {
+  height: 430px;
+  width: 90%;
+}
+#productDivSpecific {
+  line-height: 40%;
+  margin-bottom: 10%;
+}
+#allProduct {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /* justify-content: space-evenly; */
+  padding-left: 2%;
 }
 /* FOOTER SECTION  */
