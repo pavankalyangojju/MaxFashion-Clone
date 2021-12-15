@@ -3,6 +3,7 @@
 //  SORTING SECTION
 
 //  PRODUCT DISPLAY SECTION
+
 var dataOfProduct = [
   {
     proudimg:
@@ -175,6 +176,99 @@ var dataOfProduct = [
     productpromotions: "sale",
     productDiscount: "60",
   },
+  {
+    proudimg:
+      "https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010615711-Beige-Oatmarl-1000010615711-9152021_02-2100.jpg",
+    produPrice: "499",
+    prodDesc: "MAX Printed Full Sleeves Sweatshirt",
+    productcolor: "white",
+    producttype: "hoodie",
+    productdesgine: "solid",
+    productSleveLength: "full sleves",
+    Browse: "sale",
+    productpromotions: "sale",
+    productDiscount: "60",
+  },
+  {
+    proudimg:
+      "https://lmsin.net/cdn-cgi/image/h=493,w=333,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000009311972-Grey-Greymel-1000009311972-9032020_01-2100.jpg",
+    produPrice: "₹350",
+    prodDesc: "MAX Typgraphic Full Sleeves Sweatshirt",
+    productcolor: "pink",
+    producttype: "front open",
+    productdesgine: "solid",
+    productSleveLength: "full sleves",
+    Browse: "sale",
+    productpromotions: "sale",
+    productDiscount: "60",
+  },
+  {
+    proudimg:
+      "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000009311806-Yellow-Yellow-1000009311806-11022020_01-2100.jpg",
+    produPrice: "₹475",
+    prodDesc: "MAX Solid Full Sleeves Sweatshirt",
+    productcolor: "yellow",
+    producttype: "pullover",
+    productdesgine: "solid",
+    productSleveLength: "full sleves",
+    Browse: "sale",
+    productpromotions: "sale",
+    productDiscount: "60",
+  },
+  {
+    proudimg:
+      "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010468539-Black-Black-1000010468539-9152021_01-2100.jpg",
+    produPrice: "₹599",
+    prodDesc: "MAX Printed regular fit Sweatshirt",
+    productcolor: "White",
+    producttype: "pullover",
+    productdesgine: "solid",
+    productSleveLength: "half sleves",
+    Browse: "sale",
+    productpromotions: "sale",
+    productDiscount: "60",
+  },
+  {
+    proudimg:
+      "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010642197-Beige-Oatmarl-1000010642197-10202021_01-2100.jpg",
+    produPrice: "₹449",
+    prodDesc: "MAX Printed Round Neck Sweatshirt",
+    productcolor: "white",
+    producttype: "front open",
+    productdesgine: "printed",
+    productSleveLength: "half sleves",
+    Browse: "sale",
+    productpromotions: "sale",
+    productDiscount: "60",
+  },
+  {
+    proudimg:
+      "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010694522-Black-Black-1000010694522-10202021_01-2100.jpg",
+    produPrice: "₹699",
+    prodDesc: "MAX Colorblocked High-Neck Sweatshirt",
+    productcolor: "pink",
+    producttype: "hoddie",
+    productdesgine: "printed",
+    productSleveLength: "half sleves",
+    Browse: "sale",
+    productpromotions: "sale",
+    productDiscount: "60",
+  },
+  {
+    proudimg:
+      "https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010504181-Grey-Greymel-1000010504181-9012021_01-2100.jpg",
+    produPrice: "₹899",
+    prodDesc: "MAX Solid Hooded Sweatshirt",
+    productcolor: "white",
+    producttype: "front open",
+    productdesgine: "texture",
+    productSleveLength: "full sleeves",
+    Browse: "sale",
+    productpromotions: "sale",
+    productDiscount: "60",
+  },
+
+  //  FOOTER SECTION
 ];
 var count = document.querySelector("#countProduct");
 var ProductTotal = dataOfProduct.length;
@@ -204,8 +298,9 @@ dataOfProduct.map(function (ele) {
   productbutton.textContent = "ADD TO BASKET";
 
   productDiv.append(productImg, proudprice, prouddescription, productbutton);
+
   appenddiv.append(productDiv);
 });
 
 //  FOOTER SECTION
-
+//  FOOTER SECTION
