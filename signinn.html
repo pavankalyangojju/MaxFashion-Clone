@@ -72,14 +72,14 @@
                      var passworrd=document.querySelector("#password").value;
                      
                     
-                     var s=true;
+                     
                       
                       for(var i=0;i<fetchingdata.length;i++)
                       {
                           if(fetchingdata[i].passwords==passworrd && fetchingdata[i].emaild==emails)
                           {
                                document.querySelector("h1").textContent="sucessfully logined";
-                               s=true;
+                               return true
                              
                                window.location.href="add.html";
                                
@@ -87,7 +87,7 @@
                        
                            else (fetchingdata[i].passwords!==passworrd || fetchingdata[i].emaild!==emails)
                           {
-                                       s=false;
+                                       return false
                                         
                           }
                          
