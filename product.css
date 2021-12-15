@@ -1,6 +1,26 @@
 /* HEADER  SECTION   */
 
 /* SORTING SECTION  */
+#mainsorting {
+  background-color: #f7f8f7;
+}
+
+.sortdiv {
+  display: grid;
+  grid-template-columns: repeat(6, 200px);
+  grid-gap: 20px;
+  padding-top: 20px;
+}
+
+.box {
+  padding: 10px;
+  border: none;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+
+
+
 
 /* PRODUCT DISPLAY SECTION  */
 #productsort {
