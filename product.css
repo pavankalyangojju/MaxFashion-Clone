@@ -41,4 +41,13 @@
   /* justify-content: space-evenly; */
   padding-left: 2%;
 }
+
+#buttonproduct {
+  width: 90%;
+  height: 7%;
+  background-color: #303ab2;
+  color: white;
+  font-size: 100%;
+  border-radius: 5px;
+}
 /* FOOTER SECTION  */

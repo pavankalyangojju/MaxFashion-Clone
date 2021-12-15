@@ -115,7 +115,11 @@ dataOfProduct.map(function (ele) {
   prouddescription.setAttribute("id", "proddesc");
   prouddescription.textContent = ele.prodDesc;
 
-  productDiv.append(productImg, proudprice, prouddescription);
+  var productbutton = document.createElement("button");
+  productbutton.setAttribute("id", "buttonproduct");
+  productbutton.textContent = "ADD TO BASKET";
+
+  productDiv.append(productImg, proudprice, prouddescription, productbutton);
   appenddiv.append(productDiv);
 });
 
