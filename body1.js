@@ -78,7 +78,9 @@ categoryItem.map(function (ele) {
 
   specdiv.append(image, para);
   mainDiv.append(specdiv);
-  document.querySelector(".img").addEventListener("click", function () {
-    window.location.href = "product.html";
-  });
 });
+document.querySelectorAll(".img").addEventListener("click", landingToProd);
+
+function landingToProd(ele) {
+  console.log("ele.product.html");
+}
