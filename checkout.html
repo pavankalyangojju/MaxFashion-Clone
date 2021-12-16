@@ -56,13 +56,48 @@
             margin: auto;
             height: 800px;
             margin-top: 20px;
+            gap: 40px;
+            display: flex;
+        }
+
+        #ordersummery {
+            border: 1px solid teal;
+            width: 35%;
+            height: 500px;
         }
 
         #shippingmethod {
-            height: 300px;
-            width: 60%;
+            height: 200px;
+            width: 65%;
             border: blue 1px solid;
         }
+
+        #getproduct {
+            display: flex;
+            gap: 15px;
+        }
+
+        #getproduct>div {
+            width: 50%;
+            height: 70px;
+            margin: auto;
+            text-align: center;
+            line-height: 10px;
+            box-shadow: rgba(0, 0, 0, 0.10) 0px 0px 0px 1px;
+        }
+
+        #getproduct>div>p:nth-child(1) {
+            font-weight: 600;
+            font-size: 17px;
+        }
+
+        #getproduct>div>p:nth-child(2) {
+            font-size: 13px;
+            color: grey;
+            font-weight: 500;
+        }
+
+        #shipping {}
     </style>
 </head>
 
@@ -82,11 +117,20 @@
                 <h2>Select a shipping method</h2>
             </div>
             <div id="getproduct">
-                <div></div>
-                <div></div>
+                <div>
+                    <p>Home Delivery</p>
+                    <p>Get your product delivered to your home.</p>
+                </div>
+                <div>
+                    <p>Click & Collect</p>
+                    <p>Collect your order from a store of your choice.</p>
+                </div>
             </div>
+        </div>
+        <div id="shipping">
 
         </div>
+        <div id="ordersummery"></div>
 
     </div>
 
