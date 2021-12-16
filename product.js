@@ -34,6 +34,12 @@ function inputfunction(event) {
     window.location.href = "vineeth.html";
   }
 }
+
+var addevent = document.getElementById("prodPageAE");
+addevent.addEventListener("click", function () {
+  window.location.href = "body1.html";
+});
+
 //  SORTING SECTION
 
 //  PRODUCT DISPLAY SECTION

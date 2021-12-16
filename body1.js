@@ -35,6 +35,8 @@ function inputfunction(event) {
   }
 }
 
+// bodyPart
+
 var categoryItem = [
   {
     Image:
