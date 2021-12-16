@@ -344,3 +344,79 @@ dataOfProduct.map(function (ele) {
 
 //  FOOTER SECTION
 //  FOOTER SECTION
+
+function typesort() {
+  var sortedarr = [];
+  var type = document.querySelector("#type").value;
+  for (var i = 0; i < dataOfProduct.length; i++) {
+    if (type == dataOfProduct[i].producttype) {
+      sortedarr.push(dataOfProduct[i]);
+    }
+  }
+  displayItems(sortedarr);
+}
+
+function design() {
+  var sortedarr = [];
+  var type = document.querySelector("#design").value;
+  for (var i = 0; i < dataOfProduct.length; i++) {
+    if (type == dataOfProduct[i].productdesgine) {
+      sortedarr.push(dataOfProduct[i]);
+    }
+  }
+  displayItems(sortedarr);
+}
+
+function color() {
+  var sortedarr = [];
+  var color = document.querySelector("#color").value;
+  for (var i = 0; i < dataOfProduct.length; i++) {
+    if (color == dataOfProduct[i].productcolor) {
+      sortedarr.push(dataOfProduct[i]);
+    }
+  }
+  displayItems(sortedarr);
+}
+
+function sleeve() {
+  var sortedarr = [];
+  var sleeve = document.querySelector("#sleeve").value;
+  for (var i = 0; i < dataOfProduct.length; i++) {
+    if (sleeve == dataOfProduct[i].productSleveLength) {
+      sortedarr.push(dataOfProduct[i]);
+    }
+  }
+  displayItems(sortedarr);
+}
+
+function browse() {
+  var sortedarr = [];
+  var browse = document.querySelector("#browse").value;
+  for (var i = 0; i < dataOfProduct.length; i++) {
+    if (browse == dataOfProduct[i].Browse) {
+      sortedarr.push(dataOfProduct[i]);
+    }
+  }
+  displayItems(sortedarr);
+}
+
+function promotions() {
+  var sortedarr = [];
+  var browse = document.querySelector("#promotions").value;
+  for (var i = 0; i < dataOfProduct.length; i++) {
+    if (browse == dataOfProduct[i].productpromotions) {
+      sortedarr.push(dataOfProduct[i]);
+    }
+  }
+  displayItems(sortedarr);
+}
+function discount() {
+  var sortedarr = [];
+  var browse = document.querySelector("#discount").value;
+  for (var i = 0; i < dataOfProduct.length; i++) {
+    if (browse == dataOfProduct[i].productDiscount) {
+      sortedarr.push(dataOfProduct[i]);
+    }
+  }
+  displayItems(sortedarr);
+}
