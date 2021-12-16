@@ -118,4 +118,10 @@ categoryItem.map(function (ele) {
   specdiv.append(image, para);
   mainDiv.append(specdiv);
 });
-document.querySelectorAll(".img").addEventListener("click", landingToProd);
+var landingtoProd = document.getElementsByClassName("img");
+console.log(landingtoProd.length);
+
+for (var i = 0; i < landingtoProd.length; i++)
+  landingtoProd[i].addEventListener("click", function () {
+    window.location.href = "product.html";
+  });
