@@ -230,7 +230,7 @@
 
         }
 
-        #first>div {}
+
 
         #second {
             background-color: whitesmoke;
@@ -277,6 +277,7 @@
             width: auto;
 
         }
+
 
 
         .border {
@@ -333,7 +334,63 @@
             }
         }
 
-        .twopopup {}
+
+
+        .border {
+            background-color: grey;
+            border: 1px solid;
+            height: 8px !important;
+            margin-top: 100px;
+            border-color: black;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+
+        #second>input {
+            height: 50%;
+        }
+
+        button {
+            height: 50%;
+            font-size: 10px;
+            background-color: white;
+            border: 0px;
+        }
+
+        #second {
+            grid-area: a;
+        }
+
+        .b {
+            grid-area: b;
+        }
+
+        @media only screen and (min-width:0px) and (max-width:600px) {
+            .total {
+                justify-content: none;
+            }
+
+            #third {
+                display: none;
+            }
+
+            #maximage {
+                display: none;
+            }
+
+            .signupid {
+                display: none;
+            }
+
+            .displayhere {
+                display: display;
+            }
+        }
+
+
 
         .twopopup .addlayer {
             border: 1px solid black;
