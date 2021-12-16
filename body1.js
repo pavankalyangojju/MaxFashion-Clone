@@ -1,3 +1,40 @@
+// header form
+document.querySelector("#button").addEventListener("click", go);
+function go() {
+  window.location.href = "product.html";
+}
+function togglepop() {
+  document.querySelector("#popup-1").classList.toggle("yes");
+}
+document.querySelector("#popcontinue").addEventListener("click", popcont);
+
+function popcont() {
+  // window.location.href="signin.html"
+}
+
+function popfunct() {
+  document.getElementById("twopop").classList.toggle("value");
+  alert(
+    " USe code for 03351 for verifying your mobile number with Maxfashion.com. OTP is valid for 5 minutes(s) "
+  );
+}
+
+document.querySelector("#inputform").addEventListener("click", inputfunction);
+var box5 = document.querySelector("#inputnumber5").value;
+box5 = 3;
+function inputfunction(event) {
+  event.preventDefault();
+  var box1 = document.querySelector("#inputnumber1").value;
+  var box2 = document.querySelector("#inputnumber2").value;
+  var box3 = document.querySelector("#inputnumber3").value;
+  var box4 = document.querySelector("#inputnumber4").value;
+  var box5 = document.querySelector("#inputnumber5").value;
+
+  if (box1 == 0 && box2 == 3 && box3 == 3 && box4 == 5 && box5 == 1) {
+    window.location.href = "vineeth.html";
+  }
+}
+
 var categoryItem = [
   {
     Image:
@@ -80,7 +117,3 @@ categoryItem.map(function (ele) {
   mainDiv.append(specdiv);
 });
 document.querySelectorAll(".img").addEventListener("click", landingToProd);
-
-function landingToProd(ele) {
-  console.log("ele.product.html");
-}
