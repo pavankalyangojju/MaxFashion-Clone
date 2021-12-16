@@ -274,7 +274,7 @@ var dataOfProduct = [
 displayItems(dataOfProduct);
 
 function displayItems(product) {
-  document.querySelector('#allProduct').textContent = "";
+  document.querySelector("#allProduct").textContent = "";
 
   var count = document.querySelector("#countProduct");
   var ProductTotal = product.length;
@@ -306,9 +306,7 @@ function displayItems(product) {
     productDiv.append(productImg, proudprice, prouddescription, productbutton);
     appenddiv.append(productDiv);
   });
-
 }
-
 
 //  FOOTER SECTION
 //  FOOTER SECTION
@@ -318,10 +316,10 @@ function displayItems(product) {
 // Vineeth part
 function typesort() {
   var sortedarr = [];
-  var type = document.querySelector('#type').value
+  var type = document.querySelector("#type").value;
   for (var i = 0; i < dataOfProduct.length; i++) {
     if (type == dataOfProduct[i].producttype) {
-      sortedarr.push(dataOfProduct[i])
+      sortedarr.push(dataOfProduct[i]);
     }
   }
   displayItems(sortedarr);
@@ -329,10 +327,10 @@ function typesort() {
 
 function design() {
   var sortedarr = [];
-  var type = document.querySelector('#design').value
+  var type = document.querySelector("#design").value;
   for (var i = 0; i < dataOfProduct.length; i++) {
     if (type == dataOfProduct[i].productdesgine) {
-      sortedarr.push(dataOfProduct[i])
+      sortedarr.push(dataOfProduct[i]);
     }
   }
   displayItems(sortedarr);
@@ -340,10 +338,10 @@ function design() {
 
 function color() {
   var sortedarr = [];
-  var color = document.querySelector('#color').value
+  var color = document.querySelector("#color").value;
   for (var i = 0; i < dataOfProduct.length; i++) {
     if (color == dataOfProduct[i].productcolor) {
-      sortedarr.push(dataOfProduct[i])
+      sortedarr.push(dataOfProduct[i]);
     }
   }
   displayItems(sortedarr);
@@ -351,10 +349,10 @@ function color() {
 
 function sleeve() {
   var sortedarr = [];
-  var sleeve = document.querySelector('#sleeve').value
+  var sleeve = document.querySelector("#sleeve").value;
   for (var i = 0; i < dataOfProduct.length; i++) {
     if (sleeve == dataOfProduct[i].productSleveLength) {
-      sortedarr.push(dataOfProduct[i])
+      sortedarr.push(dataOfProduct[i]);
     }
   }
   displayItems(sortedarr);
@@ -362,10 +360,10 @@ function sleeve() {
 
 function browse() {
   var sortedarr = [];
-  var browse = document.querySelector('#browse').value
+  var browse = document.querySelector("#browse").value;
   for (var i = 0; i < dataOfProduct.length; i++) {
     if (browse == dataOfProduct[i].Browse) {
-      sortedarr.push(dataOfProduct[i])
+      sortedarr.push(dataOfProduct[i]);
     }
   }
   displayItems(sortedarr);
@@ -373,23 +371,21 @@ function browse() {
 
 function promotions() {
   var sortedarr = [];
-  var browse = document.querySelector('#promotions').value
+  var browse = document.querySelector("#promotions").value;
   for (var i = 0; i < dataOfProduct.length; i++) {
     if (browse == dataOfProduct[i].productpromotions) {
-      sortedarr.push(dataOfProduct[i])
+      sortedarr.push(dataOfProduct[i]);
     }
   }
   displayItems(sortedarr);
 }
 function discount() {
   var sortedarr = [];
-  var browse = document.querySelector('#discount').value
+  var browse = document.querySelector("#discount").value;
   for (var i = 0; i < dataOfProduct.length; i++) {
     if (browse == dataOfProduct[i].productDiscount) {
-      sortedarr.push(dataOfProduct[i])
+      sortedarr.push(dataOfProduct[i]);
     }
   }
   displayItems(sortedarr);
 }
-
-
