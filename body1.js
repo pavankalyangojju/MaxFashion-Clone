@@ -31,7 +31,7 @@ function inputfunction(event) {
   var box5 = document.querySelector("#inputnumber5").value;
 
   if (box1 == 0 && box2 == 3 && box3 == 3 && box4 == 5 && box5 == 1) {
-    window.location.href = "vineeth.html";
+    window.location.href = "product.html";
   }
 }
 
