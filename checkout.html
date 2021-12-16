@@ -54,13 +54,19 @@
             border: solid 1px red;
             width: 90%;
             margin: auto;
-            height: 800px;
+            /* height: 800px; */
             margin-top: 20px;
             gap: 40px;
             display: flex;
         }
 
-        #ordersummery {
+        #leftcontent {
+            border: solid 1px pink;
+            width: 65%;
+        }
+
+
+        #rightcontent {
             border: 1px solid teal;
             width: 35%;
             height: 500px;
@@ -68,7 +74,7 @@
 
         #shippingmethod {
             height: 200px;
-            width: 65%;
+            width: 100%;
             border: blue 1px solid;
         }
 
@@ -97,7 +103,43 @@
             font-weight: 500;
         }
 
-        #shipping {}
+        #shippingform {
+            border: solid 1px red;
+            width: 100%;
+
+        }
+
+        #shippingform>form>div {
+            padding-bottom: 10px;
+        }
+
+        #shippingform>form>div>input {
+            width: 62%;
+            height: 32px;
+            border-radius: 3px;
+            margin-bottom: 10px;
+            padding-left: 15px;
+            border: none;
+            box-shadow: rgba(0, 0, 0, 0.10) 0px 0px 0px 1px;
+        }
+
+        /* #shippingform>form>div>label { */
+        label {
+            font-size: 15px;
+            font-weight: 600;
+            line-height: 30px;
+        }
+
+        #ordersummery {
+            width: 90%;
+            margin: auto;
+            padding-left: 20px;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+        }
+
+        #ordersummery>div {
+            border: solid 1px blue;
+        }
     </style>
 </head>
 
@@ -112,28 +154,135 @@
         </div>
     </div>
     <div id="content">
-        <div id="shippingmethod">
+        <div id="leftcontent">
+            <div id="shippingmethod">
+                <div>
+                    <h2>Select a shipping method</h2>
+                </div>
+                <div id="getproduct">
+                    <div>
+                        <p>Home Delivery</p>
+                        <p>Get your product delivered to your home.</p>
+                    </div>
+                    <div>
+                        <p>Click & Collect</p>
+                        <p>Collect your order from a store of your choice.</p>
+                    </div>
+                </div>
+            </div>
+            <div id="shippingform">
+                <h3>Add your shipping address</h3>
+                <form>
+                    <div>
+                        <label for="Name">Full Name</label><br>
+                        <input class="checkoutinput" type="text" placeholder="Enter your full name">
+                    </div>
+                    <div>
+                        <label for="Name">Mobile Number</label><br>
+                        <input class="checkoutinput" type="number" placeholder="Enter your Mobile Number">
+                    </div>
+                    <div>
+                        <label for="pincode">Pincode</label><br>
+                        <input class="checkoutinput" type="number" placeholder="Enter your pincode">
+                    </div>
+                    <div>
+                        <label for="city">City</label><br>
+                        <input class="checkoutinput" type="text" placeholder="Enter your City Or Town">
+                    </div>
+                    <div>
+                        <label for="">Building name or number</label><br>
+                        <input class="checkoutinput" type="text" placeholder=" Enter Building Name">
+                    </div>
+                    <div>
+                        <label for="">Street name or number</label><br>
+                        <input class="checkoutinput" type="text" placeholder="Flat/house number,Floor,Building">
+                    </div>
+                    <div>
+                        <label for="">Landmark</label><br>
+                        <input class="checkoutinput" type="text" placeholder="Landmark">
+                    </div>
+                    <div>
+                        <label for="">Address</label>
+                        <div>
+                            <label for="">Home</label><input type="radio">
+                            <label for=""></label>Office<input type="radio">
+
+                        </div>
+
+                    </div>
+                </form>
+
+            </div>
             <div>
-                <h2>Select a shipping method</h2>
-            </div>
-            <div id="getproduct">
-                <div>
-                    <p>Home Delivery</p>
-                    <p>Get your product delivered to your home.</p>
+                <h2>Select a payment method</h2>
+                <div style="display: flex;padding-right: 10px;">
+                    <input type="radio">
+                    <img src="https://i1.lmsin.net/website_images/ae/checkout/card-payment.svg" />
+                    <div>
+                        <p>Credit/Debit Card</p>
+                        <p>Use your Credit or Debit card</p>
+                    </div>
+
                 </div>
                 <div>
-                    <p>Click & Collect</p>
-                    <p>Collect your order from a store of your choice.</p>
+                    <div>
+                        <input type="radio"><label>Credit Card</label>
+                        <input type="radio"><label>Debit Card</label>
+                    </div>
+                    <div>
+                        <label>Card Number</label><br>
+                        <input type="number" placeholder="Enter your 16 digit card number" />
+                    </div>
+                    <div>
+                        <label>Name on card</label><br>
+                        <input type="text" placeholder="Name on card" />
+                    </div>
+                    <div>
+                        <label>Expiry Date</label><label>CVV</label>
+                        <input type="number">
+                        <input type="number">
+                    </div>
                 </div>
+                <hr>
+                <div>
+                    <input type="radio" />
+
+                </div>
+
+
             </div>
         </div>
-        <div id="shipping">
-
+        <div id="rightcontent">
+            <div id="ordersummery">
+                <div>
+                    <p>
+                        Your order summary
+                    </p>
+                </div>
+                <div id="productinfo">
+                    <div></div>
+                </div>
+                <div>
+                    <p>Subtotal:</p>
+                    <p id="price"></p>
+                </div>
+                <div>
+                    <p>
+                        Standard Ground Shipping:
+                    </p>
+                    <p>Free</p>
+                </div>
+                <div>
+                    <p>Total</p>
+                    <p id="total"></p>
+                </div>
+            </div>
+            <div>
+                <p>Ways you can pay:</p>
+                <img src="" />
+            </div>
         </div>
-        <div id="ordersummery"></div>
-
     </div>
-
 </body>
 
 </html>
