@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* font family */
+        @font-face {
+            font-family: "proxima_nova_rgregular";
+            src: url("https://litmus.com/fonts/Emails/proximanova-regular-webfont.eot");
+            src: url("https://litmus.com/fonts/Emails/proximanova-regular-webfont.eot?#iefix") format("embedded-opentype"),
+                url("https://litmus.com/fonts/Emails/proximanova-regular-webfont.woff") format("woff"),
+                url("https://litmus.com/fonts/Emails/proximanova-regular-webfont.ttf") format("truetype"),
+                url("https://litmus.com/fonts/Emails/proximanova-regular-webfont.svg#proxima_nova_rgregular") format("svg");
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        body {
+            font-family: "proxima_nova_rgregular";
+        }
+
+        #head {
+            height: 40px;
+            width: 90%;
+            display: flex;
+            padding-left: 60px;
+            padding-right: 60px;
+            justify-content: space-between;
+            padding-bottom: 10px;
+            box-shadow: rgba(17, 17, 26, 0.1) 0px 2px 0px;
+            /* position: fixed; */
+        }
+
+        #head>div {}
+
+        .img {
+            height: 80%;
+            width: 80%;
+        }
+
+        #head>div>p {
+            font-size: 13px;
+            line-height: 5px;
+            color: #d2a39c;
+            text-align: end;
+        }
+
+        /* Content part */
+        #content {
+            border: solid 1px red;
+            width: 90%;
+            margin: auto;
+            height: 800px;
+            margin-top: 20px;
+        }
+
+        #shippingmethod {
+            height: 300px;
+            width: 60%;
+            border: blue 1px solid;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="head">
+        <div>
+            <img class="img" src=" https://i1.lmsin.net/website_images/in/logos/header/logo-max.svg" />
+        </div>
+        <div>
+            <p> Call 1800-123-1444</p>
+            <p>Monday - Saturday, 09:00AM - 07:00PM</p>
+        </div>
+    </div>
+    <div id="content">
+        <div id="shippingmethod">
+            <div>
+                <h2>Select a shipping method</h2>
+            </div>
+            <div id="getproduct">
+                <div></div>
+                <div></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

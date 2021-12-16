@@ -16,7 +16,7 @@ var dataOfProduct = [
     productSleveLength: "full sleves",
     Browse: "new",
     productpromotions: "Max300",
-    productDiscount: "40",
+    productDiscount: "30",
   },
   {
     proudimg:
@@ -42,7 +42,7 @@ var dataOfProduct = [
     productSleveLength: "full sleves",
     Browse: "new",
     productpromotions: "sale",
-    productDiscount: "40",
+    productDiscount: "20",
   },
   {
     proudimg:
@@ -55,7 +55,7 @@ var dataOfProduct = [
     productSleveLength: "full sleves",
     Browse: "new",
     productpromotions: "sale",
-    productDiscount: "40",
+    productDiscount: "30",
   },
   {
     proudimg:
@@ -68,7 +68,7 @@ var dataOfProduct = [
     productSleveLength: "full sleves",
     Browse: "online only",
     productpromotions: "sale",
-    productDiscount: "60",
+    productDiscount: "30",
   },
   {
     proudimg:
@@ -81,7 +81,7 @@ var dataOfProduct = [
     productSleveLength: "full sleves",
     Browse: "online only",
     productpromotions: "sale",
-    productDiscount: "60",
+    productDiscount: "10",
   },
   {
     proudimg:
@@ -94,7 +94,7 @@ var dataOfProduct = [
     productSleveLength: "full sleves",
     Browse: "online only",
     productpromotions: "Max300",
-    productDiscount: "60",
+    productDiscount: "20",
   },
   {
     proudimg:
@@ -102,7 +102,7 @@ var dataOfProduct = [
     produPrice: "₹599",
     prodDesc: "MAX Printed Round Neck Sweatshirt",
     productcolor: "blue",
-    producttype: "Hoddie",
+    producttype: "hoddie",
     productdesgine: "printed",
     productSleveLength: "full sleves",
     Browse: "online only",
@@ -121,7 +121,7 @@ var dataOfProduct = [
     productSleveLength: "full sleves",
     Browse: "online only",
     productpromotions: "Max300",
-    productDiscount: "70",
+    productDiscount: "30",
   },
 
   {
@@ -135,7 +135,7 @@ var dataOfProduct = [
     productSleveLength: "full sleves",
     Browse: "online only",
     productpromotions: "Max300",
-    productDiscount: "80",
+    productDiscount: "30",
   },
   {
     proudimg:
@@ -146,9 +146,9 @@ var dataOfProduct = [
     producttype: "hoddie",
     productdesgine: "printed",
     productSleveLength: "full sleves",
-    Browse: "sale",
+    Browse: "new",
     productpromotions: "Max300",
-    productDiscount: "50",
+    productDiscount: "10",
   },
   {
     proudimg:
@@ -159,9 +159,9 @@ var dataOfProduct = [
     producttype: "front open",
     productdesgine: "solid",
     productSleveLength: "full sleves",
-    Browse: "sale",
+    Browse: "new",
     productpromotions: "Max300",
-    productDiscount: "60",
+    productDiscount: "30",
   },
   {
     proudimg:
@@ -172,9 +172,9 @@ var dataOfProduct = [
     producttype: "hoodie",
     productdesgine: "solid",
     productSleveLength: "full sleves",
-    Browse: "sale",
+    Browse: "new",
     productpromotions: "sale",
-    productDiscount: "60",
+    productDiscount: "20",
   },
   {
     proudimg:
@@ -185,9 +185,9 @@ var dataOfProduct = [
     producttype: "hoodie",
     productdesgine: "solid",
     productSleveLength: "full sleves",
-    Browse: "sale",
+    Browse: "new",
     productpromotions: "sale",
-    productDiscount: "60",
+    productDiscount: "10",
   },
   {
     proudimg:
@@ -198,9 +198,9 @@ var dataOfProduct = [
     producttype: "front open",
     productdesgine: "solid",
     productSleveLength: "full sleves",
-    Browse: "sale",
+    Browse: "new",
     productpromotions: "sale",
-    productDiscount: "60",
+    productDiscount: "30",
   },
   {
     proudimg:
@@ -211,9 +211,9 @@ var dataOfProduct = [
     producttype: "pullover",
     productdesgine: "solid",
     productSleveLength: "full sleves",
-    Browse: "sale",
+    Browse: "new",
     productpromotions: "sale",
-    productDiscount: "60",
+    productDiscount: "20",
   },
   {
     proudimg:
@@ -224,9 +224,9 @@ var dataOfProduct = [
     producttype: "pullover",
     productdesgine: "solid",
     productSleveLength: "half sleves",
-    Browse: "sale",
+    Browse: "new",
     productpromotions: "sale",
-    productDiscount: "60",
+    productDiscount: "10",
   },
   {
     proudimg:
@@ -237,9 +237,9 @@ var dataOfProduct = [
     producttype: "front open",
     productdesgine: "printed",
     productSleveLength: "half sleves",
-    Browse: "sale",
+    Browse: "new",
     productpromotions: "sale",
-    productDiscount: "60",
+    productDiscount: "30",
   },
   {
     proudimg:
@@ -250,9 +250,9 @@ var dataOfProduct = [
     producttype: "hoddie",
     productdesgine: "printed",
     productSleveLength: "half sleves",
-    Browse: "sale",
+    Browse: "new",
     productpromotions: "sale",
-    productDiscount: "60",
+    productDiscount: "10",
   },
   {
     proudimg:
@@ -262,45 +262,134 @@ var dataOfProduct = [
     productcolor: "white",
     producttype: "front open",
     productdesgine: "texture",
-    productSleveLength: "full sleeves",
-    Browse: "sale",
+    productSleveLength: "full sleves",
+    Browse: "new",
     productpromotions: "sale",
-    productDiscount: "60",
+    productDiscount: "20",
   },
-
-  //  FOOTER SECTION
 ];
-var count = document.querySelector("#countProduct");
-var ProductTotal = dataOfProduct.length;
-count.textContent = ProductTotal + " " + "Products";
+// var count = document.querySelector("#countProduct");
+// var ProductTotal = dataOfProduct.length;
+// count.textContent = ProductTotal + " " + "Products";
+displayItems(dataOfProduct);
 
-dataOfProduct.map(function (ele) {
-  var appenddiv = document.querySelector("#allProduct");
-  var productDiv = document.createElement("div");
-  productDiv.setAttribute("id", "productDivSpecific");
+function displayItems(product) {
+  document.querySelector('#allProduct').textContent = "";
 
-  var productImg = document.createElement("img");
-  productImg.setAttribute("id", "hovering");
-  productImg.setAttribute("src", ele.proudimg);
+  var count = document.querySelector("#countProduct");
+  var ProductTotal = product.length;
+  count.textContent = ProductTotal + " " + "Products";
 
-  var proudprice = document.createElement("h2");
-  proudprice.textContent = ele.produPrice;
+  product.map(function (ele) {
+    var appenddiv = document.querySelector("#allProduct");
+    var productDiv = document.createElement("div");
+    productDiv.setAttribute("id", "productDivSpecific");
 
-  var prouddescription = document.createElement("p");
-  prouddescription.setAttribute("id", "proddesc");
-  prouddescription.textContent = ele.prodDesc;
+    var productImg = document.createElement("img");
+    productImg.setAttribute("id", "hovering");
+    productImg.setAttribute("src", ele.proudimg);
 
-  //   var bottomdiv = document.createElement("div");
-  //   productDiv.setAttribute("id", "bottondiv");
+    var proudprice = document.createElement("h2");
+    proudprice.textContent = ele.produPrice;
 
-  var productbutton = document.createElement("button");
-  productbutton.setAttribute("id", "buttonproduct");
-  productbutton.textContent = "ADD TO BASKET";
+    var prouddescription = document.createElement("p");
+    prouddescription.setAttribute("id", "proddesc");
+    prouddescription.textContent = ele.prodDesc;
 
-  productDiv.append(productImg, proudprice, prouddescription, productbutton);
+    //   var bottomdiv = document.createElement("div");
+    //   productDiv.setAttribute("id", "bottondiv");
 
-  appenddiv.append(productDiv);
-});
+    var productbutton = document.createElement("button");
+    productbutton.setAttribute("id", "buttonproduct");
+    productbutton.textContent = "ADD TO BASKET";
+
+    productDiv.append(productImg, proudprice, prouddescription, productbutton);
+    appenddiv.append(productDiv);
+  });
+
+}
+
 
 //  FOOTER SECTION
 //  FOOTER SECTION
+
+//  FOOTER SECTION
+
+// Vineeth part
+function typesort() {
+  var sortedarr = [];
+  var type = document.querySelector('#type').value
+  for (var i = 0; i < dataOfProduct.length; i++) {
+    if (type == dataOfProduct[i].producttype) {
+      sortedarr.push(dataOfProduct[i])
+    }
+  }
+  displayItems(sortedarr);
+}
+
+function design() {
+  var sortedarr = [];
+  var type = document.querySelector('#design').value
+  for (var i = 0; i < dataOfProduct.length; i++) {
+    if (type == dataOfProduct[i].productdesgine) {
+      sortedarr.push(dataOfProduct[i])
+    }
+  }
+  displayItems(sortedarr);
+}
+
+function color() {
+  var sortedarr = [];
+  var color = document.querySelector('#color').value
+  for (var i = 0; i < dataOfProduct.length; i++) {
+    if (color == dataOfProduct[i].productcolor) {
+      sortedarr.push(dataOfProduct[i])
+    }
+  }
+  displayItems(sortedarr);
+}
+
+function sleeve() {
+  var sortedarr = [];
+  var sleeve = document.querySelector('#sleeve').value
+  for (var i = 0; i < dataOfProduct.length; i++) {
+    if (sleeve == dataOfProduct[i].productSleveLength) {
+      sortedarr.push(dataOfProduct[i])
+    }
+  }
+  displayItems(sortedarr);
+}
+
+function browse() {
+  var sortedarr = [];
+  var browse = document.querySelector('#browse').value
+  for (var i = 0; i < dataOfProduct.length; i++) {
+    if (browse == dataOfProduct[i].Browse) {
+      sortedarr.push(dataOfProduct[i])
+    }
+  }
+  displayItems(sortedarr);
+}
+
+function promotions() {
+  var sortedarr = [];
+  var browse = document.querySelector('#promotions').value
+  for (var i = 0; i < dataOfProduct.length; i++) {
+    if (browse == dataOfProduct[i].productpromotions) {
+      sortedarr.push(dataOfProduct[i])
+    }
+  }
+  displayItems(sortedarr);
+}
+function discount() {
+  var sortedarr = [];
+  var browse = document.querySelector('#discount').value
+  for (var i = 0; i < dataOfProduct.length; i++) {
+    if (browse == dataOfProduct[i].productDiscount) {
+      sortedarr.push(dataOfProduct[i])
+    }
+  }
+  displayItems(sortedarr);
+}
+
+
