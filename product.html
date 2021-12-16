@@ -172,37 +172,37 @@
         </option>
 
       </select>
-      <select name="" id="type" class="box" onchange="typesort()">Type
-        <option value="--">Type</option>
-        <option value="Hooddie">Hooded</option>
-        <option value="Pullover">Pullover</option>
-        <option value="type">Front Open</option>
+      <select name="" id="type" class="box" onchange="typesort()">
+        <option>Type</option>
+        <option value="hoddie">Hooded</option>
+        <option value="pullover">Pullover</option>
+        <option value="front open">Front Open</option>
       </select>
-      <select name="" id="design" class="box">
-        <option value="--">Design</option>
-        <option value="type">Printed</option>
+      <select name="" id="design" class="box" onchange="design()">
+        <option>Design</option>
+        <option value="printed">Printed</option>
         <option value="solid">Solid</option>
         <option value="textured">Textured</option>
-        <option value="type">Jacquart</option>
+        <option value="jacquard">Jacquard</option>
       </select>
 
       <select name="" id="size" class="box">
-        <option value="--">Size</option>
+        <option>Size</option>
         <option value="type">L</option>
         <option value="type">M</option>
         <option value="type">S</option>
       </select>
 
-      <select name="" id="color" class="box">
-        <option value="--">Color</option>
-        <option value="type">blue</option>
-        <option value="type">purple</option>
-        <option value="type">pink</option>
+      <select name="" id="color" class="box" onchange="color()">
+        <option>Color</option>
+        <option value="blue">blue</option>
+        <option value="purple">purple</option>
+        <option value="pink">pink</option>
       </select>
-      <select name="" id="cate" class="box">
-        <option value="--">Sleeve Length</option>
-        <option value="halfsleeve">Half Sleeve</option>
-        <option value="type">Full Sleeve</option>
+      <select name="" id="sleeve" class="box" onchange="sleeve()">
+        <option>Sleeve Length</option>
+        <option value="half sleves">Half Sleeve</option>
+        <option value="full sleves">Full Sleeve</option>
         <option value="type">3/4th Sleeve</option>
         <option value="type">Sleeve Less</option>
       </select>
@@ -212,27 +212,24 @@
     </div>
     <div class="sortdiv">
 
-      <select name="" id="browse" class="box">
-        <option value="--">Browse</option>
-        <option value="type">Flat 30% off</option>
-        <option value="type">New</option>
-        <option value="type">ONLINE ONLY</option>
+      <select name="" id="browse" class="box" onchange="browse()">
+        <option>Browse</option>
+        <option value="new">New</option>
+        <option value="online only">ONLINE ONLY</option>
         <option value="type">Flat 50% off</option>
         <option value="type">Flat 20% off</option>
         <option value="type">Flat 40% off</option>
       </select>
-      <select name="" id="promotions" class="box">
-        <option value="--">Promotions</option>
-        <option value="type">Sale</option>
-        <option value="type">Max 300</option>
+      <select name="" id="promotions" class="box" onchange='promotions()'>
+        <option>Promotions</option>
+        <option value="sale">Sale</option>
+        <option value="Max300">Max 300</option>
       </select>
-      <select name="" id="discount" class="box">
-        <option value="--">Discount Range</option>
-        <option value="type">40% and above</option>
-        <option value="type">30% and above</option>
-        <option value="type">20% and above</option>
-        <option value="type">10% and above</option>
-        <option value="type">Less than 10%</option>
+      <select name="" id="discount" class="box" onchange="discount()">
+        <option>Discount Range</option>
+        <option value="30">30% and above</option>
+        <option value="20">20% and above</option>
+        <option value="10">Less than 10%</option>
       </select>
 
     </div>

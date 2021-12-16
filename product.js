@@ -310,41 +310,49 @@ var dataOfProduct = [
 
   //  FOOTER SECTION
 ];
-var count = document.querySelector("#countProduct");
-var ProductTotal = dataOfProduct.length;
-count.textContent = ProductTotal + " " + "Products";
+displayItems(dataOfProduct);
 
-dataOfProduct.map(function (ele) {
-  var appenddiv = document.querySelector("#allProduct");
-  var productDiv = document.createElement("div");
-  productDiv.setAttribute("id", "productDivSpecific");
+function displayItems(product) {
+  document.querySelector("#allProduct").textContent = "";
 
-  var productImg = document.createElement("img");
-  productImg.setAttribute("id", "hovering");
-  productImg.setAttribute("src", ele.proudimg);
+  var count = document.querySelector("#countProduct");
+  var ProductTotal = product.length;
+  count.textContent = ProductTotal + " " + "Products";
 
-  var proudprice = document.createElement("h2");
-  proudprice.textContent = ele.produPrice;
+  product.map(function (ele) {
+    var appenddiv = document.querySelector("#allProduct");
+    var productDiv = document.createElement("div");
+    productDiv.setAttribute("id", "productDivSpecific");
 
-  var prouddescription = document.createElement("p");
-  prouddescription.setAttribute("id", "proddesc");
-  prouddescription.textContent = ele.prodDesc;
+    var productImg = document.createElement("img");
+    productImg.setAttribute("id", "hovering");
+    productImg.setAttribute("src", ele.proudimg);
 
-  //   var bottomdiv = document.createElement("div");
-  //   productDiv.setAttribute("id", "bottondiv");
+    var proudprice = document.createElement("h2");
+    proudprice.textContent = ele.produPrice;
 
-  var productbutton = document.createElement("button");
-  productbutton.setAttribute("id", "buttonproduct");
-  productbutton.textContent = "ADD TO BASKET";
+    var prouddescription = document.createElement("p");
+    prouddescription.setAttribute("id", "proddesc");
+    prouddescription.textContent = ele.prodDesc;
 
-  productDiv.append(productImg, proudprice, prouddescription, productbutton);
+    //   var bottomdiv = document.createElement("div");
+    //   productDiv.setAttribute("id", "bottondiv");
 
-  appenddiv.append(productDiv);
-});
+    var productbutton = document.createElement("button");
+    productbutton.setAttribute("id", "buttonproduct");
+    productbutton.textContent = "ADD TO BASKET";
+
+    productDiv.append(productImg, proudprice, prouddescription, productbutton);
+    appenddiv.append(productDiv);
+  });
+}
 
 //  FOOTER SECTION
 //  FOOTER SECTION
 
+//  FOOTER SECTION
+
+// Vineeth part
 function typesort() {
   var sortedarr = [];
   var type = document.querySelector("#type").value;
