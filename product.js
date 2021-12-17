@@ -395,7 +395,7 @@ function typesort() {
   displayItems(sortedarr);
 }
 
-function design() {
+function designarr() {
   var sortedarr = [];
   var type = document.querySelector("#design").value;
   for (var i = 0; i < dataOfProduct.length; i++) {
@@ -403,10 +403,11 @@ function design() {
       sortedarr.push(dataOfProduct[i]);
     }
   }
+  console.log("here");
   displayItems(sortedarr);
 }
 
-function color() {
+function colorarr() {
   var sortedarr = [];
   var color = document.querySelector("#color").value;
   for (var i = 0; i < dataOfProduct.length; i++) {
@@ -417,7 +418,7 @@ function color() {
   displayItems(sortedarr);
 }
 
-function sleeve() {
+function sleevearr() {
   var sortedarr = [];
   var sleeve = document.querySelector("#sleeve").value;
   for (var i = 0; i < dataOfProduct.length; i++) {
@@ -428,7 +429,7 @@ function sleeve() {
   displayItems(sortedarr);
 }
 
-function browse() {
+function browsearr() {
   var sortedarr = [];
   var browse = document.querySelector("#browse").value;
   for (var i = 0; i < dataOfProduct.length; i++) {
@@ -439,7 +440,7 @@ function browse() {
   displayItems(sortedarr);
 }
 
-function promotions() {
+function promotionsarr() {
   var sortedarr = [];
   var browse = document.querySelector("#promotions").value;
   for (var i = 0; i < dataOfProduct.length; i++) {
@@ -449,7 +450,7 @@ function promotions() {
   }
   displayItems(sortedarr);
 }
-function discount() {
+function discountarr() {
   var sortedarr = [];
   var browse = document.querySelector("#discount").value;
   for (var i = 0; i < dataOfProduct.length; i++) {
