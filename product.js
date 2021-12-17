@@ -57,6 +57,8 @@ var dataOfProduct = [
     Browse: "new",
     productpromotions: "Max300",
     productDiscount: "40",
+
+    productsize: "M",
   },
   {
     proudimg:
@@ -70,6 +72,7 @@ var dataOfProduct = [
     Browse: "new",
     productpromotions: "Max300",
     productDiscount: "10",
+    productsize: "S",
   },
   {
     proudimg:
@@ -83,6 +86,7 @@ var dataOfProduct = [
     Browse: "new",
     productpromotions: "sale",
     productDiscount: "40",
+    productsize: "L",
   },
   {
     proudimg:
@@ -96,6 +100,7 @@ var dataOfProduct = [
     Browse: "new",
     productpromotions: "sale",
     productDiscount: "40",
+    productsize: "XL",
   },
   {
     proudimg:
@@ -109,6 +114,7 @@ var dataOfProduct = [
     Browse: "online only",
     productpromotions: "sale",
     productDiscount: "60",
+    productsize: "M",
   },
   {
     proudimg:
@@ -122,6 +128,7 @@ var dataOfProduct = [
     Browse: "online only",
     productpromotions: "sale",
     productDiscount: "60",
+    productsize: "S",
   },
   {
     proudimg:
@@ -135,6 +142,7 @@ var dataOfProduct = [
     Browse: "online only",
     productpromotions: "Max300",
     productDiscount: "60",
+    productsize: "L",
   },
   {
     proudimg:
@@ -148,6 +156,7 @@ var dataOfProduct = [
     Browse: "online only",
     productpromotions: "Max300",
     productDiscount: "20",
+    productsize: "XL",
   },
 
   {
@@ -162,6 +171,7 @@ var dataOfProduct = [
     Browse: "online only",
     productpromotions: "Max300",
     productDiscount: "70",
+    productsize: "M",
   },
 
   {
@@ -176,6 +186,7 @@ var dataOfProduct = [
     Browse: "online only",
     productpromotions: "Max300",
     productDiscount: "80",
+    productsize: "S",
   },
   {
     proudimg:
@@ -189,6 +200,7 @@ var dataOfProduct = [
     Browse: "sale",
     productpromotions: "Max300",
     productDiscount: "50",
+    productsize: "L",
   },
   {
     proudimg:
@@ -202,6 +214,7 @@ var dataOfProduct = [
     Browse: "sale",
     productpromotions: "Max300",
     productDiscount: "60",
+    productsize: "XL",
   },
   {
     proudimg:
@@ -215,6 +228,7 @@ var dataOfProduct = [
     Browse: "sale",
     productpromotions: "sale",
     productDiscount: "60",
+    productsize: "M",
   },
   {
     proudimg:
@@ -228,6 +242,7 @@ var dataOfProduct = [
     Browse: "sale",
     productpromotions: "sale",
     productDiscount: "60",
+    productsize: "S",
   },
   {
     proudimg:
@@ -241,6 +256,7 @@ var dataOfProduct = [
     Browse: "sale",
     productpromotions: "sale",
     productDiscount: "60",
+    productsize: "L",
   },
   {
     proudimg:
@@ -254,6 +270,7 @@ var dataOfProduct = [
     Browse: "sale",
     productpromotions: "sale",
     productDiscount: "60",
+    productsize: "XXL",
   },
   {
     proudimg:
@@ -267,6 +284,7 @@ var dataOfProduct = [
     Browse: "sale",
     productpromotions: "sale",
     productDiscount: "60",
+    productsize: "M",
   },
   {
     proudimg:
@@ -280,6 +298,7 @@ var dataOfProduct = [
     Browse: "sale",
     productpromotions: "sale",
     productDiscount: "60",
+    productsize: "S",
   },
   {
     proudimg:
@@ -293,6 +312,7 @@ var dataOfProduct = [
     Browse: "sale",
     productpromotions: "sale",
     productDiscount: "60",
+    productsize: "L",
   },
   {
     proudimg:
@@ -306,6 +326,7 @@ var dataOfProduct = [
     Browse: "sale",
     productpromotions: "sale",
     productDiscount: "60",
+    productsize: "XXL",
   },
 
   //  FOOTER SECTION
@@ -343,23 +364,19 @@ function displayItems(product) {
     productbutton.setAttribute("id", "buttonproduct");
     productbutton.textContent = "ADD TO BASKET";
 
-
-    productbutton.addEventListener("click", gotocarts)
+    productbutton.addEventListener("click", gotocarts);
 
     function gotocarts() {
-
-      console.log("here")
-      mybasketarray.push(ele)
+      console.log("here");
+      mybasketarray.push(ele);
       localStorage.setItem("storecarts", JSON.stringify(mybasketarray));
-
-
     }
 
     productDiv.append(productImg, proudprice, prouddescription, productbutton);
     appenddiv.append(productDiv);
   });
 }
-console.log(mybasketarray)
+console.log(mybasketarray);
 
 //  FOOTER SECTION
 //  FOOTER SECTION
@@ -443,8 +460,8 @@ function discount() {
   displayItems(sortedarr);
 }
 
-document.querySelector(".b").addEventListener("click", basketgo)
+document.querySelector(".b").addEventListener("click", basketgo);
 
 function basketgo() {
-  window.location.href = "cart.html"
+  window.location.href = "cart.html";
 }
