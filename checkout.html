@@ -51,17 +51,16 @@
 
         /* Content part */
         #content {
-            border: solid 1px red;
             width: 90%;
             margin: auto;
             /* height: 800px; */
             margin-top: 20px;
             gap: 40px;
             display: flex;
+            box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
         }
 
         #leftcontent {
-            border: solid 1px pink;
             width: 65%;
         }
 
@@ -75,12 +74,13 @@
         #shippingmethod {
             height: 200px;
             width: 100%;
-            border: blue 1px solid;
+            /* border: blue 1px solid; */
         }
 
         #getproduct {
             display: flex;
             gap: 15px;
+
         }
 
         #getproduct>div {
@@ -104,7 +104,6 @@
         }
 
         #shippingform {
-            border: solid 1px red;
             width: 100%;
 
         }
@@ -139,6 +138,63 @@
 
         #ordersummery>div {
             border: solid 1px blue;
+        }
+
+        .paymentmethod {
+            /* EMI part */
+            display: flex;
+            align-items: center;
+            line-height: 8px;
+            padding: 20px;
+            gap: 15px;
+            height: 30px;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+        }
+
+        .paymentmethod>div:nth-child(1) {
+            width: 15%;
+        }
+
+        .paymentmethod>div>p {
+            font-size: 15px;
+            color: grey;
+        }
+
+        #paynow {
+            display: flex;
+            align-items: center;
+            gap: 100px;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+        }
+
+        #paynow>div>button {
+            background-color: #303ab2;
+            color: white;
+            border: none;
+            width: 200px;
+            height: 40px;
+        }
+
+        /* #terms {
+            border: 1px solid blue;
+            height: 120px;
+        } */
+
+        #comodo {
+            display: flex;
+            gap: 8px;
+            margin-top: 10px;
+        }
+
+        #comodo>div>p {
+            font-size: 13px;
+            color: grey;
+        }
+
+        #terms>div:last-child {
+            padding-left: 13%;
+            line-height: 10px;
+            font-size: 13px;
         }
     </style>
 </head>
@@ -215,43 +271,121 @@
             </div>
             <div>
                 <h2>Select a payment method</h2>
-                <div style="display: flex;padding-right: 10px;">
-                    <input type="radio">
-                    <img src="https://i1.lmsin.net/website_images/ae/checkout/card-payment.svg" />
+                <div class="paymentmethod">
                     <div>
-                        <p>Credit/Debit Card</p>
+                        <input type="radio" />
+                        <img height="25px" src="https://i1.lmsin.net/website_images/ae/checkout/card-payment.svg" />
+                    </div>
+                    <div>
+                        <h4>Credit/Debit Card</h4>
                         <p>Use your Credit or Debit card</p>
                     </div>
-
                 </div>
-                <div>
+                <div class="paymentmethod">
                     <div>
-                        <input type="radio"><label>Credit Card</label>
-                        <input type="radio"><label>Debit Card</label>
+                        <input type="radio" />
+                        <img height="35px" src="https://i1.lmsin.net/website_images/in/checkout/logo-emi.png" />
                     </div>
                     <div>
-                        <label>Card Number</label><br>
-                        <input type="number" placeholder="Enter your 16 digit card number" />
-                    </div>
-                    <div>
-                        <label>Name on card</label><br>
-                        <input type="text" placeholder="Name on card" />
-                    </div>
-                    <div>
-                        <label>Expiry Date</label><label>CVV</label>
-                        <input type="number">
-                        <input type="number">
+                        <h4>EMI</h4>
+                        <p>Available on orders above Rs3,000</p>
                     </div>
                 </div>
-                <hr>
-                <div>
-                    <input type="radio" />
+                <div class="paymentmethod">
+                    <div>
+                        <div>
+                            <input type="radio" />
+                            <img height="35px" src="https://i1.lmsin.net/website_images/ae/checkout/logo-paypal.png" />
+                        </div>
 
+                    </div>
+                    <div>
+                        <h4>PayPal</h4>
+                        <p>Pay now with your PayPal account</p>
+                    </div>
                 </div>
-
+                <div class="paymentmethod">
+                    <div>
+                        <div>
+                            <input type="radio" />
+                            <img height="25px" src="https://i1.lmsin.net/website_images/ae/checkout/logo-cash.png" />
+                        </div>
+                    </div>
+                    <div>
+                        <h4>Cash On Delivery</h4>
+                        <p>+ Rs49</p>
+                    </div>
+                </div>
+                <div class="paymentmethod">
+                    <div>
+                        <input type="radio" />
+                        <img width=70px; src="https://i1.lmsin.net/website_images/in/checkout/logo-netbanking.svg" />
+                    </div>
+                    <div>
+                        <h4>Net Banking</h4>
+                        <p>Pay by your preferred bank account.</p>
+                    </div>
+                </div>
+                <div class="paymentmethod">
+                    <div>
+                        <input type="radio" />
+                        <img width="30px" height="30px" ;
+                            src="https://i1.lmsin.net/website_images/in/my-account/ico-payment-wallet.png" />
+                    </div>
+                    <div>
+                        <h4>Wallets</h4>
+                        <p>Pay with your preferred wallet.</p>
+                    </div>
+                </div>
+                <div class="paymentmethod">
+                    <div>
+                        <input type="radio" />
+                        <img src="https://i1.lmsin.net/website_images/payment/upi.png" />
+                    </div>
+                    <div>
+                        <h4>UPI</h4>
+                        <p>Pay with your preferred UPI Id.</p>
+                    </div>
+                </div>
+                <div class="paymentmethod">
+                    <img height="20px" src="https://i1.lmsin.net/website_images/common/images/basket/ico-gift.png" />
+                    <p>Got a Promo Code?</p>
+                </div>
+                <div class="paymentmethod">
+                    <img height="20px" src="https://i1.lmsin.net/website_images/in/giftcards/gift-card-icon.svg" />
+                    <p>Have a gift Card??</p>
+                </div>
+                <div id="paynow">
+                    <div>
+                        <p>By clicking on Proceed to Payment, you agree to our Terms and Conditions</p>
+                    </div>
+                    <div>
+                        <button>Pay Now</button>
+                    </div>
+                </div>
+                <!-- Terms of Use - Terms & Conditions -->
+                <div id="terms">
+                    <div id="comodo">
+                        <div>
+                            <img height="50px"
+                                src="https://i1.lmsin.net/website_images/common/images/logos/logo-comodo.png" />
+                        </div>
+                        <div>
+                            <p>Your credit card details are securely encrypted and passed directly to our PCI DSS
+                                compliant Payment Gateway for processing. We only store your credit card's last 4
+                                digits and the expiration date. Your traffic to this page is secured using either a
+                                256-bit or 128-bit SSL certificate depending on your browser version.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <p>© 2021 RNA Intellectual Property Limited.</p>
+                        <p>Privacy Policy - Terms of Use - Terms & Conditions</p>
+                    </div>
+                </div>
 
             </div>
         </div>
+        <!-- Right side part -->
         <div id="rightcontent">
             <div id="ordersummery">
                 <div>
