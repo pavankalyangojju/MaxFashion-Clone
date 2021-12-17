@@ -1,403 +1,490 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
 
-    <style>
-      #cartyoumay #maylike {
-        width: 80%;
-        height: 270px;
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 
-        margin: auto;
-        margin-top: 20px;
-      }
+  <style>
+    #cartyoumay #maylike {
+      width: 80%;
+      height: 270px;
 
-      #cartyoumay .new {
-        width: 15%;
-        height: 230px;
 
-        margin: auto;
-      }
+      margin: auto;
+      margin-top: 20px;
 
-      #cartyoumay .also {
-        width: 100%;
-        height: 70%;
-      }
 
-      #cartmain {
-        width: 80%;
-        height: 700px;
-        margin: auto;
-      }
 
-      #cartmain #cartfstbx {
-        width: 100%;
-        height: 70px;
-      }
 
-      #cartmain #cartfstbx + div {
-        border: 1px solid rgb(201, 133, 109);
-        width: 100%;
-        height: 70px;
-        margin-bottom: 10px;
-      }
 
-      #cartmain #cartinsidebx {
-        width: 100%;
-        height: auto;
-        display: flex;
-      }
+    }
 
-      #cartmain #cartinsidebx {
-        /* justify-content: space-evenly;
+    #cartyoumay .new {
+      width: 15%;
+      height: 230px;
+
+      margin: auto;
+    }
+
+    #cartyoumay .also {
+      width: 100%;
+      height: 70%;
+    }
+
+    #cartmain {
+
+      width: 80%;
+      height: 700px;
+      margin: auto;
+    }
+
+    #cartmain #cartfstbx {
+
+      width: 100%;
+      height: 70px;
+
+    }
+
+    #cartmain #cartfstbx+div {
+      border: 1px solid rgb(201, 133, 109);
+      width: 100%;
+      height: 70px;
+      margin-bottom: 10px;
+
+    }
+
+    #cartmain #cartinsidebx {
+
+      width: 100%;
+      height: auto;
+      display: flex;
+
+
+    }
+
+    #cartmain #cartinsidebx {
+
+      /* justify-content: space-evenly;
       
 */
 
-        margin-bottom: 10px;
-      }
 
-      #cartmain #cartinsidebx > div {
-        /* justify-content: space-evenly;
+      margin-bottom: 10px;
+    }
+
+    #cartmain #cartinsidebx>div {
+
+      /* justify-content: space-evenly;
                   
             */
 
-        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-      }
 
-      #cartmain #cartinsidebx > div:first-child {
-        width: 65%;
-        height: auto;
-      }
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    }
 
-      #cartmain #cartinsidebx > div:nth-child(2n) {
-        width: 30%;
-        height: 350px;
-        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-      }
+    #cartmain #cartinsidebx>div:first-child {
 
-      #cibfirstchild {
-        display: flex;
+      width: 65%;
+      height: auto;
 
-        width: 100%;
-        justify-content: space-around;
-        height: auto;
-      }
 
-      #cibfirstchild > div {
-        display: flex;
-      }
 
-      #cibfirstchild > div:nth-child(3) {
-        display: flex;
 
-        margin-left: 100px;
-      }
 
-      #paymentimages {
-        display: flex;
-        box-sizing: border-box;
-        justify-content: space-between;
-        box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
-      }
 
-      #paymentimages > div {
-        box-sizing: border-box;
-        width: 10%;
-        height: 10%;
-        margin-top: 10px;
-      }
+    }
 
-      #paymentimages > div img {
-        width: 100%;
-        height: 100%;
-      }
+    #cartmain #cartinsidebx>div:nth-child(2n) {
 
-      #customerfeedback {
-        display: flex;
-        justify-content: space-between;
-        color: gray;
-      }
+      width: 30%;
+      height: 350px;
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 
-      #paymentimages + div {
-        margin-top: 10px;
-        width: 100%;
-        height: 100%;
-      }
 
-      #cartmain #subtotalbox {
-        margin-left: 5%;
-        height: auto;
-      }
 
-      #cartmain #subtotalbox > div {
-        margin: 10px;
-      }
 
-      #cartmain #subtotalbox > div > div {
-        margin: 10px;
-      }
+    }
 
-      #cartmain .subtotalflex {
-        display: flex;
-        justify-content: space-between;
-      }
+    #cibfirstchild {
+      display: flex;
 
-      #cartmain #subtotalbox button {
-        background-color: rgb(4, 4, 119);
-        width: 100%;
-        height: 40px;
-        border: 0;
-        color: white;
-      }
+      width: 100%;
+      justify-content: space-around;
+      height: auto;
 
-      #cartmain #ctimgsb {
-        height: auto;
 
-        margin-bottom: 100px;
-      }
 
-      #cartmain #ctimgsb > div {
-        height: 100%;
 
-        display: flex;
-        width: 100%;
-        margin-right: 10px;
 
-        margin-top: 10px;
-        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-      }
 
-      #cartmain #ctimgsb > div > div {
-        height: 150px;
-        width: 17%;
-      }
 
-      #cartmain #ctimgsb > div > div img {
-        height: 100%;
-        width: 90%;
-      }
 
-      #cartmain #ctimgsb > div > div:nth-child(2) {
-        height: auto;
-        width: 40%;
-      }
+    }
 
-      .freeshipping {
-        color: green;
-      }
+    #cibfirstchild>div {
+      display: flex;
 
-      hr.new2 {
-        border-top: 1px dashed red;
-      }
 
-      #cartmain #cartfstbx {
-        font-size: 25px;
-      }
 
-      #cartmain #cartfstbx + div > p {
-        color: red;
-      }
 
-      #cartmain #cartfstbx + div {
-        padding-left: 10px;
-      }
 
-      #cartmain #promocode {
-        border: none;
-        border-bottom: 2px solid silver;
-      }
 
-      #promo button {
-        width: 10px;
-        height: 10px;
-      }
 
-      #cartmain > div #promosubmit {
-        width: 50px;
-        height: 30px;
-      }
-    </style>
-  </head>
 
-  <body>
-    <div id="cartmain">
-      <div id="cartfstbx"></div>
+
+
+    }
+
+    #cibfirstchild>div:nth-child(3) {
+      display: flex;
+
+
+      margin-left: 100px;
+
+
+    }
+
+
+
+    #paymentimages {
+      display: flex;
+      box-sizing: border-box;
+      justify-content: space-between;
+      box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+
+
+    }
+
+    #paymentimages>div {
+
+      box-sizing: border-box;
+      width: 10%;
+      height: 10%;
+      margin-top: 10px;
+
+
+    }
+
+    #paymentimages>div img {
+
+
+      width: 100%;
+      height: 100%;
+
+
+    }
+
+    #customerfeedback {
+      display: flex;
+      justify-content: space-between;
+      color: gray;
+
+    }
+
+    #paymentimages+div {
+
+      margin-top: 10px;
+      width: 100%;
+      height: 100%;
+
+
+
+    }
+
+    #cartmain #subtotalbox {
+
+      margin-left: 5%;
+      height: auto;
+
+
+    }
+
+    #cartmain #subtotalbox>div {
+
+      margin: 10px;
+
+
+
+    }
+
+    #cartmain #subtotalbox>div>div {
+
+      margin: 10px;
+
+
+    }
+
+    #cartmain .subtotalflex {
+      display: flex;
+      justify-content: space-between;
+
+
+    }
+
+    #cartmain #subtotalbox button {
+      background-color: rgb(4, 4, 119);
+      width: 100%;
+      height: 40px;
+      border: 0;
+      color: white;
+
+    }
+
+    #cartmain #ctimgsb {
+      height: auto;
+
+      margin-bottom: 100px;
+
+
+    }
+
+    #cartmain #ctimgsb>div {
+      height: 100%;
+
+      display: flex;
+      width: 100%;
+      margin-right: 10px;
+
+      margin-top: 10px;
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    }
+
+    #cartmain #ctimgsb>div>div {
+
+
+      height: 150px;
+      width: 17%;
+
+
+    }
+
+    #cartmain #ctimgsb>div>div img {
+      height: 100%;
+      width: 90%;
+
+    }
+
+    #cartmain #ctimgsb>div>div:nth-child(2) {
+
+
+      height: auto;
+      width: 40%;
+
+    }
+
+    #cartyoumay {}
+
+    .freeshipping {
+      color: green;
+    }
+
+    hr.new2 {
+      border-top: 1px dashed red;
+    }
+
+    #cartmain #cartfstbx {
+      font-size: 25px;
+    }
+
+    #cartmain #cartfstbx+div>p {
+      color: red;
+    }
+
+    #cartmain #cartfstbx+div {
+      padding-left: 10px;
+    }
+
+    #cartmain #promocode {
+      border: none;
+      border-bottom: 2px solid silver;
+    }
+
+    #promo button {
+      width: 10px;
+      height: 10px;
+    }
+
+    #cartmain>div #promosubmit {
+      width: 50px;
+      height: 30px;
+
+    }
+
+    #ctimgsb img {}
+  </style>
+</head>
+
+<body>
+  <div id="cartmain">
+    <div id="cartfstbx">
+
+    </div>
+    <div>
+      <p>Get the offer</p>
+      <li> FLAT 300 Off on shopping for 2499. Use code- MAX300</li>
+    </div>
+
+    <div id="cartinsidebx">
       <div>
-        <p>Get the offer</p>
-        <li>FLAT 300 Off on shopping for 2499. Use code- MAX300</li>
-      </div>
-
-      <div id="cartinsidebx">
+        <div id="cibfirstchild">
+          <div>Item</div>
+          <div>Description</div>
+          <div>Price</div>
+          <div>Quantity</div>
+          <div>Total Price</div>
+        </div>
         <div>
-          <div id="cibfirstchild">
-            <div>Item</div>
-            <div>Description</div>
-            <div>Price</div>
-            <div>Quantity</div>
-            <div>Total Price</div>
-          </div>
-          <div>
-            <img
-              height="40px"
-              width="60px"
-              src="https://i1.lmsin.net/website_images/in/logos/header/logo-max.svg"
-            />
-          </div>
-          <!-- cartimage showing box -->
-          <div id="ctimgsb"></div>
-          <!-- payments card showing -->
-          <div>
-            <div id="pymtbox"></div>
-            <div id="paymentimages">
-              <div>
-                <img
-                  src="https://i1.lmsin.net/website_images/ae/checkout/logo-paypal.png"
-                />
-              </div>
-              <div>
-                <img
-                  src="https://i1.lmsin.net/website_images/ae/checkout/logo-visa.png"
-                />
-              </div>
-              <div>
-                <img
-                  src="https://i1.lmsin.net/website_images/in/checkout/logo-rupay.svg"
-                />
-              </div>
-              <div>
-                <img
-                  src="https://i1.lmsin.net/website_images/ae/checkout/logo-cash.png"
-                />
-              </div>
-              <div>
-                <img
-                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSx6fgCL_2Fbm56SgPesCAUg14UlmPK7vWhmg&usqp=CAU"
-                />
-              </div>
-              <div>
-                <img
-                  src="https://i1.lmsin.net/website_images/in/checkout/logo-netbanking.svg"
-                />
-              </div>
-              <div>
-                <img
-                  src="https://i1.lmsin.net/website_images/in/checkout/logo-wallet.svg"
-                />
-              </div>
-            </div>
-            <!-- need help customer feedback -->
-            <div>
-              <div>Need help? We're here for you</div>
-              <div id="customerfeedback">
-                <p>Call us at 1800-123-1444</p>
-                <p>Call us at 1800-123-1444</p>
-                <p>Returns Policy</p>
-              </div>
-            </div>
-          </div>
+          <img height="40px" width="60px" src="https://i1.lmsin.net/website_images/in/logos/header/logo-max.svg">
         </div>
+        <!-- cartimage showing box -->
+        <div id="ctimgsb">
 
-        <!-- proceed to checkout box -->
-        <div id="subtotalbox">
-          <div>
-            <div class="subtotalflex">
-              <div>Subtotal:</div>
-              <div class="subtotalprice"></div>
-            </div>
-            <div class="subtotalflex">
-              <div>Standard Ground Shipping:</div>
-              <hr class="new2" />
-              <div class="freeshipping">Free</div>
-            </div>
-            <div></div>
-            <div class="subtotalflex">
-              <div>TOTAL</div>
-              <hr />
-              <div id="subtotalprice"></div>
-            </div>
-            <div></div>
+        </div>
+        <!-- payments card showing -->
+        <div>
+          <div id="pymtbox"></div>
+          <div id="paymentimages">
             <div>
-              <button id="gotopayment">Proceed to Checkout</button>
+              <img src="https://i1.lmsin.net/website_images/ae/checkout/logo-paypal.png">
+            </div>
+            <div>
+              <img src="https://i1.lmsin.net/website_images/ae/checkout/logo-visa.png">
+            </div>
+            <div>
+              <img src="https://i1.lmsin.net/website_images/in/checkout/logo-rupay.svg">
+            </div>
+            <div>
+              <img src="https://i1.lmsin.net/website_images/ae/checkout/logo-cash.png">
+            </div>
+            <div>
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSx6fgCL_2Fbm56SgPesCAUg14UlmPK7vWhmg&usqp=CAU">
+            </div>
+            <div>
+              <img src="https://i1.lmsin.net/website_images/in/checkout/logo-netbanking.svg">
+            </div>
+            <div>
+              <img src="https://i1.lmsin.net/website_images/in/checkout/logo-wallet.svg">
             </div>
           </div>
+          <!-- need help customer feedback -->
           <div>
-            <div>Got a Promo/Voucher Code?</div>
-            <div>
-              <input id="promocode" />
-              <button id="promosubmit" type="submit">Apply</button>
+            <div>Need help? We're here for you</div>
+            <div id="customerfeedback">
+              <p>Call us at 1800-123-1444 </p>
+              <p>Call us at 1800-123-1444 </p>
+              <p>Returns Policy</p>
             </div>
-            <div>Have a Gift Card? Redeem it at checkout.</div>
-            <div>Earn up to 11 Landmark Rewards points on this order</div>
           </div>
         </div>
       </div>
 
-      <div id="cartyoumay">
-        <div id="maylike">
-          <div style="padding: 10px">YOU MAY ALSO LIKE</div>
-          <div style="display: flex">
-            <div class="new" id="new1">
-              <img
-                class="also"
-                src="https://10d06a4d12b851f1b2d5-6729d756a2f36342416a9128f1759751.lmsin.net/1000010541617-Grey-Grey-1000010541617-11042021_01-345.jpg"
-                alt=""
-              />
-              <p>Max Printed Round Neck Sweatshirt <br />₹ 649</p>
-            </div>
-            <div class="new" id="new2">
-              <img
-                class="also"
-                src="https://10d06a4d12b851f1b2d5-6729d756a2f36342416a9128f1759751.lmsin.net/1000010409936-Purple-Lilac-1000010409936-8132021_01-345.jpg"
-                alt=""
-              />
-              <p>Max Textured Furry Cardigan <br />₹ 999</p>
-            </div>
-            <div class="new" id="new3">
-              <img
-                class="also"
-                src="https://10d06a4d12b851f1b2d5-6729d756a2f36342416a9128f1759751.lmsin.net/1000010468539-Black-Black-1000010468539-9152021_01-345.jpg"
-                alt=""
-              />
-              <p>Max Printed Regular Fit Sweatshirt <br />₹ 599</p>
-            </div>
-            <div class="new" id="new4">
-              <img
-                class="also"
-                src="https://10d06a4d12b851f1b2d5-6729d756a2f36342416a9128f1759751.lmsin.net/1000010541786-Pink-Pink-1000010541786-9292021_01-345.jpg"
-                alt=""
-              />
-              <p>Max Sequinned Round Neck Sweatshirt <br />₹ 599</p>
-            </div>
-            <div class="new" id="new5">
-              <img
-                class="also"
-                src="https://10d06a4d12b851f1b2d5-6729d756a2f36342416a9128f1759751.lmsin.net/1000010516094-Black-Black-1000010516094-9222021_01-345.jpg"
-                alt=""
-              />
-              <p>Max Solid Faux Fur Longline Sweater <br />₹649</p>
-            </div>
-            <div class="new" id="new6">
-              <img
-                class="also"
-                src="https://10d06a4d12b851f1b2d5-6729d756a2f36342416a9128f1759751.lmsin.net/1000010542007-Yellow-Mustard-1000010542007-9222021_01-345.jpg"
-                alt=""
-              />
-              <p>Max Printed Round Neck Sweatshirt <br />₹599</p>
-            </div>
+      <!-- proceed to checkout box -->
+      <div id="subtotalbox">
+        <div>
+          <div class="subtotalflex">
+            <div>Subtotal:</div>
+            <div class="subtotalprice"></div>
+          </div>
+          <div class="subtotalflex">
+            <div>Standard Ground Shipping:</div>
+            <hr class="new2">
+            <div class="freeshipping">Free</div>
+          </div>
+          <div>
+
+          </div>
+          <div class="subtotalflex">
+            <div>TOTAL</div>
+            <hr>
+            <div id="subtotalprice"></div>
+          </div>
+          <div></div>
+          <div>
+            <button id="gotopayment">Proceed to Checkout</button>
+          </div>
+        </div>
+        <div>
+          <div>Got a Promo/Voucher Code?</div>
+          <div>
+            <input id="promocode">
+            <button id="promosubmit" type="submit">Apply</button>
+          </div>
+          <div>
+            Have a Gift Card? Redeem it at checkout.
+          </div>
+          <div>
+            Earn up to 11 Landmark Rewards points on this order
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <div id="cartyoumay">
+      <div id="maylike">
+        <div style="padding: 10px;">YOU MAY ALSO LIKE</div>
+        <div style="display: flex;">
+          <div class="new" id="new1"><img class="also"
+              src="https://10d06a4d12b851f1b2d5-6729d756a2f36342416a9128f1759751.lmsin.net/1000010541617-Grey-Grey-1000010541617-11042021_01-345.jpg"
+              alt="">
+            <p>Max Printed Round Neck Sweatshirt <br>₹ 649</p>
+          </div>
+          <div class="new" id="new2"><img class="also"
+              src="https://10d06a4d12b851f1b2d5-6729d756a2f36342416a9128f1759751.lmsin.net/1000010409936-Purple-Lilac-1000010409936-8132021_01-345.jpg"
+              alt="">
+            <p>Max Textured Furry Cardigan <br>₹ 999</p>
+          </div>
+          <div class="new" id="new3"><img class="also"
+              src="https://10d06a4d12b851f1b2d5-6729d756a2f36342416a9128f1759751.lmsin.net/1000010468539-Black-Black-1000010468539-9152021_01-345.jpg"
+              alt="">
+            <p>Max Printed Regular Fit Sweatshirt <br>₹ 599</p>
+          </div>
+          <div class="new" id="new4"><img class="also"
+              src="https://10d06a4d12b851f1b2d5-6729d756a2f36342416a9128f1759751.lmsin.net/1000010541786-Pink-Pink-1000010541786-9292021_01-345.jpg"
+              alt="">
+            <p>Max Sequinned Round Neck Sweatshirt <br>₹ 599</p>
+          </div>
+          <div class="new" id="new5"><img class="also"
+              src="https://10d06a4d12b851f1b2d5-6729d756a2f36342416a9128f1759751.lmsin.net/1000010516094-Black-Black-1000010516094-9222021_01-345.jpg"
+              alt="">
+            <p>Max Solid Faux Fur Longline Sweater <br>₹649</p>
+          </div>
+          <div class="new" id="new6"><img class="also"
+              src="https://10d06a4d12b851f1b2d5-6729d756a2f36342416a9128f1759751.lmsin.net/1000010542007-Yellow-Mustard-1000010542007-9222021_01-345.jpg"
+              alt="">
+            <p>Max Printed Round Neck Sweatshirt <br>₹599</p>
           </div>
         </div>
       </div>
     </div>
-  </body>
+  </div>
+
+</body>
+
 </html>
 
 <script>
   var array = JSON.parse(localStorage.getItem("storecarts")) || [];
 
-  console.log(array);
+
+
+  displaydata(array)
+
+  console.log(array)
+
+
+
+
+
+
+
+
 
   myarray = {
     item: "https://10d06a4d12b851f1b2d5-6729d756a2f36342416a9128f1759751.lmsin.net/1000010542007-Yellow-Mustard-1000010542007-9222021_01-345.jpg",
@@ -408,6 +495,8 @@
     quantity: 1,
     totalprice: 999,
 
+
+
     //         Browse: "new"
     // prodDesc: "MAX Solid Hooded Sweatshirt"
     // produPrice: "₹999"
@@ -417,85 +506,208 @@
     // productdesgine: "solid"
     // productpromotions: "Max300"
     // producttype: "hoddie"
-    // proudimg:
-  };
+    // proudimg: 
+
+
+
+
+
+
+  }
   // array.push(myarray)
 
   // localStorage.setItem("cartcheck", JSON.stringify(array))
 
-  array.map(function (n, m) {
-    var highdiv = document.createElement("div");
+  function displaydata(array) {
 
-    var cartimgdiv = document.createElement("div");
-    var image = document.createElement("img");
-    image.setAttribute("src", n.proudimg);
+    array.map(function (n, m) {
 
-    cartimgdiv.append(image);
+      var highdiv = document.createElement("div")
 
-    var descdiv = document.createElement("div");
-    var desc = document.createElement("p");
-    desc.textContent = n.prodDesc;
-    var color = document.createElement("p");
-    color.textContent = "Colour:" + n.productcolor;
-    var size = document.createElement("p");
-    size.textContent = "Size:" + n.productsize;
-    var remove = document.createElement("p");
-    remove.textContent = "Remove | Save for Later";
+      var cartimgdiv = document.createElement("div");
+      var image = document.createElement("img");
+      image.setAttribute("src", n.proudimg)
 
-    descdiv.append(desc, color, size, remove);
+      cartimgdiv.append(image)
 
-    var pricediv = document.createElement("div");
-    var price = document.createElement("p");
-    price.textContent = "₹" + n.produPrice;
-    pricediv.append(price);
+      var descdiv = document.createElement("div");
+      var desc = document.createElement("p");
+      desc.textContent = n.prodDesc;
+      var color = document.createElement("p");
+      color.textContent = "Colour:" + n.productcolor;
+      var size = document.createElement("p");
+      size.textContent = "Size:" + n.productsize;
+      var remove = document.createElement("p");
+      remove.textContent = "Remove | Save for Later"
 
-    var quantitydiv = document.createElement("div");
-    var quantity = document.createElement("p");
-    quantity.textContent = n.quantity;
-    quantitydiv.append(quantity);
+      descdiv.append(desc, color, size, remove)
 
-    var totalpricediv = document.createElement("div");
-    var totalprice = document.createElement("p");
-    totalprice.textContent = "₹" + n.produPrice;
-    totalpricediv.append(totalprice);
 
-    highdiv.append(cartimgdiv, descdiv, pricediv, quantitydiv, totalpricediv);
+      remove.addEventListener("click", removeline)
 
-    document.querySelector("#ctimgsb").append(highdiv);
+      function removeline() {
+        array.splice(m, 1)
+        console.log(array)
+        localStorage.setItem("storecarts", JSON.stringify(array))
+        document.querySelector("#ctimgsb").innerHTML = "";
+        location.reload();
+        displaydata(array)
+      }
 
-    document.querySelector("#cartfstbx").innerHTML =
-      "Your Shopping Basket(" + (m + 1) + " " + "Item)";
-  });
+
+
+      var pricediv = document.createElement("div");
+      var price = document.createElement("p");
+      price.textContent = "₹" + n.produPrice;
+      pricediv.append(price);
+
+      var quantitydiv = document.createElement("div");
+      var quantity = document.createElement("p");
+
+
+
+
+
+      var select = document.createElement("select");
+
+      var option1 = document.createElement("option");
+      var option2 = document.createElement("option");
+      var option3 = document.createElement("option");
+      var option4 = document.createElement("option");
+      var option5 = document.createElement("option");
+      var option6 = document.createElement("option");
+      var option7 = document.createElement("option");
+      var option8 = document.createElement("option");
+      var option9 = document.createElement("option");
+      var option10 = document.createElement("option");
+
+      option1.textContent = 1;
+      option2.textContent = 2;
+      option3.textContent = 3;
+      option4.textContent = 4;
+      option5.textContent = 5;
+      option6.textContent = 6;
+      option7.textContent = 7;
+      option8.textContent = 8;
+      option9.textContent = 9;
+      option10.textContent = 10;
+
+      //   value
+      option1.value = 1;
+      option2.value = 2;
+      option3.value = 3;
+      option4.value = 4;
+      option5.value = 5;
+      option6.value = 6;
+      option7.value = 7;
+      option8.value = 8;
+      option9.value = 9;
+      option10.value = 10;
+
+
+      select.append(option1, option2, option3, option4, option5, option6, option7, option8, option9, option10);
+
+      select.addEventListener("change", goes)
+      var initial = 1;
+
+
+      var sum = array.reduce(function (n, m) {
+        return { produPrice: Number(n.produPrice) + Number(m.produPrice) }
+      })
+
+      var arr = [];
+
+
+      function goes() {
+
+        var z = select.value;
+
+        arr.push(n.produPrice * select.value)
+
+
+
+
+
+        totalprice.textContent = "₹" + n.produPrice * select.value;
+        var prdtotal = n.produPrice * select.value;
+
+        document.querySelector(".subtotalprice").innerHTML = "₹" + (n.produPrice * select.value + sum.produPrice - n.produPrice);
+
+        document.querySelector("#subtotalprice").innerHTML = "₹" + (n.produPrice * select.value + sum.produPrice);
+
+
+
+
+
+      }
+
+
+
+
+
+      quantitydiv.append(select)
+
+
+
+      var totalpricediv = document.createElement("div");
+      var totalprice = document.createElement("p");
+      totalprice.textContent = "₹" + n.produPrice * select.value;
+      totalpricediv.append(totalprice)
+
+
+
+
+      highdiv.append(cartimgdiv, descdiv, pricediv, quantitydiv, totalpricediv)
+
+      document.querySelector("#ctimgsb").append(highdiv)
+
+      document.querySelector("#cartfstbx").innerHTML = "Your Shopping Basket(" + (m + 1) + " Item)";
+
+
+    })
+
+  }
 
   var s = 0;
   var sum = array.reduce(function (n, m) {
-    return { produPrice: Number(n.produPrice) + Number(m.produPrice) };
-  });
+    return { produPrice: Number(n.produPrice) + Number(m.produPrice) }
+  })
 
-  console.log(sum.produPrice);
+
 
   document.querySelector(".subtotalprice").innerHTML = "₹" + sum.produPrice;
 
   document.querySelector("#subtotalprice").innerHTML = "₹" + sum.produPrice;
 
-  document.querySelector("#gotopayment").addEventListener("click", gopay);
+
+  document.querySelector("#gotopayment").addEventListener("click", gopay)
 
   function gopay() {
-    window.location.href = "hello1.html";
+    window.location.href = "checkout.html"
   }
 
-  document
-    .querySelector("#promosubmit")
-    .addEventListener("click", promosubmitgo);
+
+
+  document.querySelector("#promosubmit").addEventListener("click", promosubmitgo)
 
   function promosubmitgo() {
+
     var promoinput = document.querySelector("#promocode").value;
     if (promoinput == "masai30") {
-      document.querySelector("#subtotalprice").innerHTML =
-        "₹" + (sum.produPrice - (sum.produPrice * 30) / 100);
+      document.querySelector("#subtotalprice").innerHTML = "₹" + (sum.produPrice - sum.produPrice * 30 / 100);
     }
+
   }
+
+
+
+
+
+
+
+
 </script>
+
 
 <!-- <div id="cartimg"></div>
 <div id="cartdesc"></div>
