@@ -971,8 +971,8 @@ table {
 #header #first {
   height: 40px;
 }
-#header #first > div {
-}
+/* #header #first > div {
+} */
 #header #first > div > div {
   margin-left: 10px;
   margin-right: 10px;
