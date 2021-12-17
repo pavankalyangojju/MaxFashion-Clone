@@ -1,3 +1,251 @@
+/* HOVER PART  */
+
+/* TOPS.................... */
+.dropdownMenu {
+  line-height: 290%;
+  margin-left: 5%;
+}
+.dispFirst {
+  font-size: 160%;
+  padding-bottom: 0.5%;
+}
+.mainDivgrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  display: none;
+  width: 60%;
+  height: 250px;
+}
+.imageSetheigth {
+  height: 250px;
+  width: 80%;
+}
+
+/*BOTTOMS................. */
+.dropdownMenuT {
+  line-height: 290%;
+  margin-left: 5%;
+}
+.dispFirstT {
+  font-size: 160%;
+  padding-bottom: 0.5%;
+}
+.mainDivgridT {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  display: none;
+  width: 60%;
+  height: 250px;
+}
+.imageSetheigthT {
+  height: 250px;
+  width: 80%;
+}
+/* DRESSES AND JUMPSUIT............................. */
+.dropdownMenuTh {
+  line-height: 290%;
+  margin-left: 5%;
+}
+.dispFirstTh {
+  font-size: 200%;
+  padding-bottom: 0.5%;
+}
+.mainDivgridTh {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-evenly;
+  display: none;
+  width: 60%;
+  height: 250px;
+
+  height: 300px;
+}
+.imageSetheigthTh {
+  height: 250px;
+  width: 100%;
+}
+/* SLEEPWEAR............................. */
+
+.dropdownMenuf {
+  line-height: 290%;
+  margin-left: 5%;
+}
+.dispFirstf {
+  font-size: 200%;
+  padding-bottom: 0.5%;
+}
+.mainDivgridf {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-evenly;
+  display: none;
+  width: 60%;
+  height: 250px;
+
+  height: 300px;
+}
+.imageSetheigthf {
+  height: 250px;
+  width: 100%;
+}
+
+/* 
+  indian wear */
+
+.dropdownMenufi {
+  line-height: 290%;
+  margin-left: 5%;
+}
+.dispFirstfi {
+  font-size: 200%;
+  padding-bottom: 0.5%;
+}
+.mainDivgridfi {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-content: space-evenly;
+  display: none;
+  width: 100%;
+  height: 250px;
+
+  /*    */
+}
+.imageSetheigthfi {
+  height: 250px;
+  width: 100%;
+}
+/* sports wear  */
+.dropdownMenus {
+  line-height: 290%;
+  margin-left: 5%;
+}
+.dispFirsts {
+  font-size: 200%;
+  padding-bottom: 0.5%;
+}
+.mainDivgrids {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-evenly;
+  display: none;
+  width: 60%;
+  height: 250px;
+
+  /*    */
+}
+.imageSetheigths {
+  height: 250px;
+  width: 100%;
+}
+
+/* lingeruia */
+.dropdownMenuse {
+  line-height: 290%;
+  margin-left: 5%;
+}
+.dispFirstse {
+  font-size: 200%;
+  padding-bottom: 0.5%;
+}
+.mainDivgridse {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-evenly;
+  display: none;
+  width: 60%;
+  height: 250px;
+
+  /*    */
+}
+.imageSetheigthse {
+  height: 250px;
+  width: 100%;
+}
+
+/* accessories */
+.dropdownMenu1 {
+  line-height: 290%;
+  margin-left: 5%;
+}
+.dispFirst1 {
+  font-size: 200%;
+  padding-bottom: 0.5%;
+}
+.mainDivgrid1 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-evenly;
+  display: none;
+  width: 80%;
+  height: 250px;
+
+  /*    */
+}
+.imageSetheigth1 {
+  height: 250px;
+  width: 100%;
+}
+/* footweae */
+
+.dropdownMenu2 {
+  line-height: 290%;
+  margin-left: 5%;
+}
+.dispFirst2 {
+  font-size: 200%;
+  padding-bottom: 0.5%;
+}
+.mainDivgrid2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-evenly;
+  display: none;
+  width: 100%;
+  height: 250px;
+}
+.imageSetheigth2 {
+  height: 250px;
+  width: 100%;
+}
+
+/* winter  */
+
+.dropdownMenu3 {
+  line-height: 290%;
+  margin-left: 5%;
+}
+.dispFirst3 {
+  font-size: 200%;
+  padding-bottom: 0.5%;
+}
+.mainDivgrid3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-evenly;
+  display: none;
+  width: 100%;
+  height: 250px;
+}
+.imageSetheigth3 {
+  height: 250px;
+  width: 100%;
+}
+
+/* menu  */
+
+.dropdownMenu4 {
+  line-height: 290%;
+  margin-left: 5%;
+}
+
+.mainDivgrid4 {
+  display: none;
+  width: 100%;
+  height: 250px;
+  padding-left: 80%;
+}
+/* Hover over drop down part ends */
+
 /* HEADER  SECTION   */
 body {
   font-family: sans-serif;
@@ -712,4 +960,55 @@ table {
     margin-left: 120px;
     margin-top: 25px;
   }
+}
+
+/* maggie  */
+#header {
+  display: grid;
+}
+#header #first {
+  height: 40px;
+}
+#header #first > div {
+}
+#header #first > div > div {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#header #second {
+  height: 50px;
+}
+#header #second > div {
+  align-items: center;
+}
+
+#header #second > div > div {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+#header #second > div:first-child > div:first-child {
+  height: 50px;
+}
+
+#header #third {
+  height: 50px;
+}
+
+#header #third > div > div {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+#header #fourth {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.total > div {
+  display: flex;
+  padding-left: 60px;
+  padding-right: 60px;
 }

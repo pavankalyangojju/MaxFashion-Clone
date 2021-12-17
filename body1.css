@@ -1,6 +1,7 @@
 /* header */
 
 /* TOPS.................... */
+
 .dropdownMenu {
   line-height: 290%;
   margin-left: 5%;
@@ -720,6 +721,7 @@ button {
   font-weight: bold;
   background-color: #f7f8f7;
 }
+
 /* body  part*/
 
 #category {
@@ -1136,4 +1138,55 @@ table {
     margin-left: 120px;
     margin-top: 25px;
   }
+}
+
+/* maggie  */
+#header {
+  display: grid;
+}
+#header #first {
+  height: 40px;
+}
+#header #first > div {
+}
+#header #first > div > div {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#header #second {
+  height: 50px;
+}
+#header #second > div {
+  align-items: center;
+}
+
+#header #second > div > div {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+#header #second > div:first-child > div:first-child {
+  height: 50px;
+}
+
+#header #third {
+  height: 50px;
+}
+
+#header #third > div > div {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+#header #fourth {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.total > div {
+  display: flex;
+  padding-left: 60px;
+  padding-right: 60px;
 }

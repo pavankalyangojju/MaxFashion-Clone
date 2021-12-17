@@ -465,3 +465,121 @@ document.querySelector(".b").addEventListener("click", basketgo);
 function basketgo() {
   window.location.href = "cart.html";
 }
+
+// hovering by srinidhi
+
+//TOPS..............................
+function functionTodisplay() {
+  document.querySelector(".mainDivgrid").style.display = "block";
+  document.querySelector(".mainDivgrid").style.display = "flex";
+}
+
+function functionNotdisplay() {
+  document.querySelector(".mainDivgrid").style.display = "none";
+}
+
+//BOTTOMS.............................
+function functionTodisplay1() {
+  document.querySelector(".mainDivgridT").style.display = "block";
+  document.querySelector(".mainDivgridT").style.display = "flex";
+}
+
+function functionNotdisplay1() {
+  document.querySelector(".mainDivgridT").style.display = "none";
+}
+
+//JUMPSUITS.................................
+
+function functionTodisplay2() {
+  document.querySelector(".mainDivgridTh").style.display = "block";
+  document.querySelector(".mainDivgridTh").style.display = "flex";
+}
+
+function functionNotdisplay2() {
+  document.querySelector(".mainDivgridTh").style.display = "none";
+}
+
+// SLEEPWEAR..............................
+
+function functionTodisplay3() {
+  document.querySelector(".mainDivgridf").style.display = "block";
+  document.querySelector(".mainDivgridf").style.display = "flex";
+}
+
+function functionNotdisplay3() {
+  document.querySelector(".mainDivgridf").style.display = "none";
+}
+
+//INDIAN WEAR..................
+function functionTodisplay4() {
+  document.querySelector(".mainDivgridfi").style.display = "block";
+  document.querySelector(".mainDivgridfi").style.display = "flex";
+}
+
+function functionNotdisplay4() {
+  document.querySelector(".mainDivgridfi").style.display = "none";
+}
+
+//sports wear
+
+function functionTodisplay5() {
+  document.querySelector(".mainDivgrids").style.display = "block";
+  document.querySelector(".mainDivgrids").style.display = "flex";
+}
+
+function functionNotdisplay5() {
+  document.querySelector(".mainDivgrids").style.display = "none";
+}
+
+//Lingeri
+
+function functionTodisplay6() {
+  document.querySelector(".mainDivgridse").style.display = "block";
+  document.querySelector(".mainDivgridse").style.display = "flex";
+}
+
+function functionNotdisplay6() {
+  document.querySelector(".mainDivgridse").style.display = "none";
+}
+//accessoreis
+
+function functionTodisplay7() {
+  document.querySelector(".mainDivgrid1").style.display = "block";
+  document.querySelector(".mainDivgrid1").style.display = "flex";
+}
+
+function functionNotdisplay7() {
+  document.querySelector(".mainDivgrid1").style.display = "none";
+}
+
+// footwear
+function functionTodisplay8() {
+  document.querySelector(".mainDivgrid2").style.display = "block";
+  document.querySelector(".mainDivgrid2").style.display = "flex";
+}
+
+function functionNotdisplay8() {
+  document.querySelector(".mainDivgrid2").style.display = "none";
+}
+
+// winter
+
+function functionTodisplay9() {
+  document.querySelector(".mainDivgrid3").style.display = "block";
+  document.querySelector(".mainDivgrid3").style.display = "flex";
+}
+
+function functionNotdisplay9() {
+  document.querySelector(".mainDivgrid3").style.display = "none";
+}
+// more
+function functionTodisplay0() {
+  document.querySelector(".mainDivgrid4").style.display = "block";
+  document.querySelector(".mainDivgrid4").style.display = "flex";
+}
+
+function functionNotdisplay0() {
+  document.querySelector(".mainDivgrid4").style.display = "none";
+}
+
+// hovering end by srinidhi

@@ -243,3 +243,11 @@ function functionNotdisplay0() {
 }
 
 // hovering end by srinidhi
+
+// maggie
+
+document.querySelector(".b").addEventListener("click", gotobasketwala);
+
+function gotobasketwala() {
+  window.location.href = "cart.html";
+}
