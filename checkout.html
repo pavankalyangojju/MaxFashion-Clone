@@ -64,13 +64,6 @@
             width: 65%;
         }
 
-
-        #rightcontent {
-            border: 1px solid teal;
-            width: 35%;
-            height: 500px;
-        }
-
         #shippingmethod {
             height: 200px;
             width: 100%;
@@ -129,17 +122,6 @@
             line-height: 30px;
         }
 
-        #ordersummery {
-            width: 90%;
-            margin: auto;
-            padding-left: 20px;
-            box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
-        }
-
-        #ordersummery>div {
-            border: solid 1px blue;
-        }
-
         .paymentmethod {
             /* EMI part */
             display: flex;
@@ -163,16 +145,25 @@
         #paynow {
             display: flex;
             align-items: center;
-            gap: 100px;
+            height: 120px;
+            justify-content: space-between;
             box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+        }
+
+        #paynow>div>p {
+            font-size: 12px;
+            color: grey;
         }
 
         #paynow>div>button {
             background-color: #303ab2;
             color: white;
             border: none;
-            width: 200px;
-            height: 40px;
+            /* width: 200px;
+            height: 40px; */
+            padding: 15px 120px;
+            border-radius: 5px;
+            font-weight: 600;
         }
 
         /* #terms {
@@ -195,6 +186,20 @@
             padding-left: 13%;
             line-height: 10px;
             font-size: 13px;
+        }
+
+        /* Right side part */
+
+        #rightcontent {
+            border: 1px solid teal;
+            width: 35%;
+            height: 500px;
+            padding-left: 10px;
+        }
+
+        #ordersummery>div {
+            padding-bottom: 3px;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
         }
     </style>
 </head>
@@ -394,11 +399,10 @@
                     </p>
                 </div>
                 <div id="productinfo">
-                    <div></div>
                 </div>
-                <div>
+                <div class="total">
                     <p>Subtotal:</p>
-                    <p id="price"></p>
+                    <p id="price">999</p>
                 </div>
                 <div>
                     <p>
