@@ -424,3 +424,21 @@
 </body>
 
 </html>
+
+<script>
+    display();
+    function display() {
+        var item = JSON.parse(localStorage.getItem('storecarts'))
+        item.map(function () {
+            var maindiv = document.createElement('div');
+            var imgdiv = document.createElement("div");
+            var img = document.createElement('img');
+            var textdiv = document.createElement('div');
+            var p1 = document.createElement('p');
+            var p2 = document.createElement('p');
+            var p3 = document.createElement('p');
+
+        })
+
+    }
+</script>
