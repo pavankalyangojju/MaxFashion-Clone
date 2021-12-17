@@ -1,5 +1,29 @@
 /* header */
 
+/* Hover over drop down part */
+.dropdownMenu {
+  line-height: 290%;
+  margin-left: 5%;
+}
+.dispFirst {
+  font-size: 160%;
+  padding-bottom: 0.5%;
+}
+.mainDivgrid {
+  /* display: grid;
+      grid-template-columns: repeat(3,1fr); */
+  display: none;
+
+  width: 60%;
+  height: 250px;
+}
+.imageSetheigth {
+  height: 250px;
+  width: 80%;
+}
+
+/* Hover over drop down part ends */
+
 /* #navbar {
   position: fixed;
   width: 100%;
@@ -740,9 +764,9 @@ button {
 h5 {
   font-size: 17px;
 }
-p {
+/* p {
   color: #889878;
-}
+} */
 #Subscribe > div > p {
   font-size: 18px;
 }
