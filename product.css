@@ -750,6 +750,8 @@ button {
   /* justify-content: space-evenly; */
   /* padding-left: 2%; */
   grid-gap: 3%;
+  padding-left: 1%;
+  padding-right: 1%;
 }
 
 #buttonproduct {
