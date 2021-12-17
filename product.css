@@ -557,6 +557,28 @@ button {
   justify-content: space-between;
   margin-bottom: 50px;
 }
+
+/* altered the color by vineet pawan and sri  */
+#cat > div > p {
+  color: #889878;
+  font-weight: normal;
+  line-height: 25px;
+}
+
+#catt > div > p {
+  color: #889878;
+  font-weight: normal;
+  line-height: 25px;
+}
+#catt {
+  margin-top: 2%;
+  margin-left: 11%;
+
+  width: 29%;
+}
+
+/* altered the color by vineet pawan and sri  */
+
 .cont {
   width: 50px;
   height: 40px;
@@ -587,9 +609,9 @@ button {
 h5 {
   font-size: 17px;
 }
-p {
+/* p {
   color: #889878;
-}
+} */
 #Subscribe > div > p {
   font-size: 18px;
 }
