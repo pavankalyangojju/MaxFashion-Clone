@@ -125,3 +125,16 @@ for (var i = 0; i < landingtoProd.length; i++)
   landingtoProd[i].addEventListener("click", function () {
     window.location.href = "product.html";
   });
+
+// hovering by srinidhi
+
+function functionTodisplay() {
+  document.querySelector(".mainDivgrid").style.display = "block";
+  document.querySelector(".mainDivgrid").style.display = "flex";
+}
+
+function functionNotdisplay() {
+  document.querySelector(".mainDivgrid").style.display = "none";
+}
+
+// hovering end by srinidhi
