@@ -483,6 +483,7 @@ function pricesortchange() {
 }
 
 
+
 document.querySelector(".b").addEventListener("click", basketgo);
 
 function basketgo() {
