@@ -77,7 +77,7 @@ var dataOfProduct = [
   {
     proudimg:
       "https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010682861-Pink-Candypink-1000010682861-9222021_01-2100.jpg",
-    produPrice: "99",
+    produPrice: "1999",
     prodDesc: "MAX Solid Full Sleeves Sweatshirt",
     productcolor: "pink",
     producttype: "hoddie",
@@ -233,7 +233,7 @@ var dataOfProduct = [
   {
     proudimg:
       "https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010615711-Beige-Oatmarl-1000010615711-9152021_02-2100.jpg",
-    produPrice: "99",
+    produPrice: "1000",
     prodDesc: "MAX Printed Full Sleeves Sweatshirt",
     productcolor: "white",
     producttype: "hoodie",
@@ -368,9 +368,12 @@ function displayItems(product) {
     productbutton.addEventListener("click", gotocarts);
 
     function gotocarts() {
+      
+
       console.log("here");
       mybasketarray.push(ele);
       localStorage.setItem("storecarts", JSON.stringify(mybasketarray));
+      document.querySelector(".basketvalue").textContent = mybasketarray.length;
     }
 
     productDiv.append(productImg, proudprice, prouddescription, productbutton);
@@ -583,5 +586,14 @@ function functionTodisplay0() {
 function functionNotdisplay0() {
   document.querySelector(".mainDivgrid4").style.display = "none";
 }
+// NEW THINGS
+
+
+document.querySelector(".basketvalue").textContent = mybasketarray.length;
+document.querySelector(".b").style. cursor = "pointer";
+
+
+
 
 // hovering end by srinidhi
+
