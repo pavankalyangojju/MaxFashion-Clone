@@ -77,7 +77,7 @@ var dataOfProduct = [
   {
     proudimg:
       "https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010682861-Pink-Candypink-1000010682861-9222021_01-2100.jpg",
-    produPrice: "99",
+    produPrice: "1999",
     prodDesc: "MAX Solid Full Sleeves Sweatshirt",
     productcolor: "pink",
     producttype: "hoddie",
@@ -233,7 +233,7 @@ var dataOfProduct = [
   {
     proudimg:
       "https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/max/1000010615711-Beige-Oatmarl-1000010615711-9152021_02-2100.jpg",
-    produPrice: "99",
+    produPrice: "1000",
     prodDesc: "MAX Printed Full Sleeves Sweatshirt",
     productcolor: "white",
     producttype: "hoodie",
@@ -395,7 +395,7 @@ function typesort() {
   displayItems(sortedarr);
 }
 
-function design() {
+function designarr() {
   var sortedarr = [];
   var type = document.querySelector("#design").value;
   for (var i = 0; i < dataOfProduct.length; i++) {
@@ -403,10 +403,11 @@ function design() {
       sortedarr.push(dataOfProduct[i]);
     }
   }
+  console.log("here");
   displayItems(sortedarr);
 }
 
-function color() {
+function colorarr() {
   var sortedarr = [];
   var color = document.querySelector("#color").value;
   for (var i = 0; i < dataOfProduct.length; i++) {
@@ -417,7 +418,7 @@ function color() {
   displayItems(sortedarr);
 }
 
-function sleeve() {
+function sleevearr() {
   var sortedarr = [];
   var sleeve = document.querySelector("#sleeve").value;
   for (var i = 0; i < dataOfProduct.length; i++) {
@@ -428,7 +429,7 @@ function sleeve() {
   displayItems(sortedarr);
 }
 
-function browse() {
+function browsearr() {
   var sortedarr = [];
   var browse = document.querySelector("#browse").value;
   for (var i = 0; i < dataOfProduct.length; i++) {
@@ -439,7 +440,7 @@ function browse() {
   displayItems(sortedarr);
 }
 
-function promotions() {
+function promotionsarr() {
   var sortedarr = [];
   var browse = document.querySelector("#promotions").value;
   for (var i = 0; i < dataOfProduct.length; i++) {
@@ -449,7 +450,7 @@ function promotions() {
   }
   displayItems(sortedarr);
 }
-function discount() {
+function discountarr() {
   var sortedarr = [];
   var browse = document.querySelector("#discount").value;
   for (var i = 0; i < dataOfProduct.length; i++) {
