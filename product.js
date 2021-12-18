@@ -370,6 +370,10 @@ function displayItems(product) {
       console.log("here");
       mybasketarray.push(ele);
       localStorage.setItem("storecarts", JSON.stringify(mybasketarray));
+
+      document.querySelector(".basketvalue").textContent = mybasketarray.length;
+
+
     }
 
     productDiv.append(productImg, proudprice, prouddescription, productbutton);
@@ -589,3 +593,4 @@ function functionNotdisplay0() {
 // onclickProduct.addEventListener("click", function () {
 //   window.location.href = "magendra.html";
 // });
+document.querySelector(".basketvalue").textContent = mybasketarray.length;
