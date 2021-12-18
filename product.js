@@ -367,9 +367,12 @@ function displayItems(product) {
     productbutton.addEventListener("click", gotocarts);
 
     function gotocarts() {
+      
+
       console.log("here");
       mybasketarray.push(ele);
       localStorage.setItem("storecarts", JSON.stringify(mybasketarray));
+      document.querySelector(".basketvalue").textContent = mybasketarray.length;
     }
 
     productDiv.append(productImg, proudprice, prouddescription, productbutton);
@@ -582,6 +585,14 @@ function functionTodisplay0() {
 function functionNotdisplay0() {
   document.querySelector(".mainDivgrid4").style.display = "none";
 }
+// NEW THINGS
+
+
+document.querySelector(".basketvalue").textContent = mybasketarray.length;
+document.querySelector(".b").style. cursor = "pointer";
+
+
+
 
 // hovering end by srinidhi
 
