@@ -333,6 +333,7 @@ var dataOfProduct = [
 ];
 displayItems(dataOfProduct);
 var mybasketarray = JSON.parse(localStorage.getItem("storecarts")) || [];
+console.log(mybasketarray)
 
 function displayItems(product) {
   document.querySelector("#allProduct").textContent = "";
