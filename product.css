@@ -1014,3 +1014,29 @@ table {
   padding-left: 60px;
   padding-right: 60px;
 }
+
+/* NEW THINGS */
+#basketflex{
+  display: flex;
+   
+    color: white;
+    width: 40px;
+    height: auto;
+   
+    
+}
+#basketflex>div{
+ 
+    background-color: red;
+    color: white;
+   
+    height: 20px;
+    font-size: 16px;
+    width: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%; 
+}
+/* UPTO */
+
