@@ -1480,7 +1480,7 @@
 
       </div>
       <div id="fourth">
-        Flat 300 Off on shopping for 2499. Use code: MASAI30 >
+        Flat 300 Off on shopping for 2499. Use code: MAX300 >
 
       </div>
     </div>
@@ -2310,7 +2310,7 @@
       size.textContent = "Size:" + n.productsize;
       var remove = document.createElement("p");
       remove.textContent = "Remove | Save for Later";
-
+      remove.style.cursor = "pointer";
       descdiv.append(desc, color, size, remove);
 
       remove.addEventListener("click", removeline);
@@ -2379,5 +2379,9 @@
   }
   var mybasketarray = JSON.parse(localStorage.getItem("storecarts"))
   document.querySelector(".basketvalue").textContent = mybasketarray.length;
+
+  document.getElementById('maximage').addEventListener('click', function () {
+    window.location.href = "body1.html";
+  })
 
 </script>
