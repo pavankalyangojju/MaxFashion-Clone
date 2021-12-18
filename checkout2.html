@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* font family */
+      @font-face {
+        font-family: "proxima_nova_rgregular";
+        src: url("https://litmus.com/fonts/Emails/proximanova-regular-webfont.eot");
+        src: url("https://litmus.com/fonts/Emails/proximanova-regular-webfont.eot?#iefix")
+            format("embedded-opentype"),
+          url("https://litmus.com/fonts/Emails/proximanova-regular-webfont.woff")
+            format("woff"),
+          url("https://litmus.com/fonts/Emails/proximanova-regular-webfont.ttf")
+            format("truetype"),
+          url("https://litmus.com/fonts/Emails/proximanova-regular-webfont.svg#proxima_nova_rgregular")
+            format("svg");
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      body {
+        font-family: "proxima_nova_rgregular";
+      }
+
+      #head {
+        height: 40px;
+        width: 90%;
+        display: flex;
+        padding-left: 60px;
+        padding-right: 60px;
+        justify-content: space-between;
+        padding-bottom: 10px;
+        box-shadow: rgba(17, 17, 26, 0.1) 0px 2px 0px;
+        /* position: fixed; */
+      }
+
+      #head > div {
+      }
+
+      .img {
+        height: 80%;
+        width: 80%;
+      }
+
+      #head > div > p {
+        font-size: 13px;
+        line-height: 5px;
+        color: #d2a39c;
+        text-align: end;
+      }
+
+      /* Content part */
+      #content {
+        width: 90%;
+        margin: auto;
+        /* height: 800px; */
+        margin-top: 20px;
+        gap: 40px;
+        display: flex;
+        box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+      }
+
+      #leftcontent {
+        width: 65%;
+      }
+
+      #shippingmethod {
+        height: 200px;
+        width: 100%;
+        /* border: blue 1px solid; */
+      }
+
+      #getproduct {
+        display: flex;
+        gap: 15px;
+      }
+
+      #getproduct > div {
+        width: 50%;
+        height: 70px;
+        margin: auto;
+        text-align: center;
+        line-height: 10px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 0px 1px;
+      }
+
+      #getproduct > div > p:nth-child(1) {
+        font-weight: 600;
+        font-size: 17px;
+      }
+
+      #getproduct > div > p:nth-child(2) {
+        font-size: 13px;
+        color: grey;
+        font-weight: 500;
+      }
+
+      #shippingform {
+        width: 100%;
+      }
+
+      #shippingform > form > div {
+        padding-bottom: 10px;
+      }
+
+      #shippingform > form > div > input {
+        width: 62%;
+        height: 32px;
+        border-radius: 3px;
+        margin-bottom: 10px;
+        padding-left: 15px;
+        border: none;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 0px 1px;
+      }
+
+      /* #shippingform>form>div>label { */
+      label {
+        font-size: 15px;
+        font-weight: 600;
+        line-height: 30px;
+      }
+
+      .paymentmethod {
+        /* EMI part */
+        display: flex;
+        align-items: center;
+        line-height: 8px;
+        padding: 20px;
+        gap: 15px;
+        height: 30px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+      }
+
+      .paymentmethod > div:nth-child(1) {
+        width: 15%;
+      }
+
+      .paymentmethod > div > p {
+        font-size: 15px;
+        color: grey;
+      }
+
+      #paynow {
+        display: flex;
+        align-items: center;
+        height: 120px;
+        justify-content: space-between;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+      }
+
+      #paynow > div > p {
+        font-size: 12px;
+        color: grey;
+      }
+
+      #paynow > div > button {
+        background-color: #303ab2;
+        color: white;
+        border: none;
+        /* width: 200px;
+            height: 40px; */
+        padding: 15px 120px;
+        border-radius: 5px;
+        font-weight: 600;
+      }
+
+      /* #terms {
+            border: 1px solid blue;
+            height: 120px;
+        } */
+
+      #comodo {
+        display: flex;
+        gap: 8px;
+        margin-top: 10px;
+      }
+
+      #comodo > div > p {
+        font-size: 13px;
+        color: grey;
+      }
+
+      #terms > div:last-child {
+        padding-left: 13%;
+        line-height: 10px;
+        font-size: 13px;
+      }
+
+      /* Right side part */
+
+      #rightcontent {
+        width: 35%;
+        height: 650px;
+        padding-left: 10px;
+      }
+
+      #ordersummery {
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+        padding: 5px;
+      }
+
+      #ordersummery > div {
+        padding-bottom: 3px;
+        box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+      }
+
+      #ordersummery > div:first-child > p {
+        font-size: 18px;
+      }
+
+      #productinfo > div {
+        display: flex;
+      }
+
+      .imgdiv {
+        width: 25%;
+        padding: 5px 5px;
+        margin: 5px 0px;
+      }
+
+      .imgdiv > img {
+        width: 100%;
+        height: 90%;
+      }
+
+      .textdiv {
+        padding-left: 5px;
+        font-size: 12px;
+      }
+
+      #ordersummery > div:nth-child(3) {
+        display: flex;
+        justify-content: space-between;
+        padding: 0px 10px;
+        font-weight: bold;
+      }
+
+      #ordersummery > div:nth-child(4) {
+        display: flex;
+        justify-content: space-between;
+        padding: 0px 10px;
+        font-weight: bold;
+      }
+
+      #ordersummery > div:nth-child(5) {
+        display: flex;
+        justify-content: space-between;
+        padding: 0px 10px;
+        font-weight: bold;
+        box-shadow: none;
+      }
+
+      #paymentimage > div {
+        margin: 10px;
+      }
+
+      #paymentimage > div > img {
+        padding: 5px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="head">
+      <div>
+        <img
+          class="img"
+          src=" https://i1.lmsin.net/website_images/in/logos/header/logo-max.svg"
+        />
+      </div>
+      <div>
+        <p>Call 1800-123-1444</p>
+        <p>Monday - Saturday, 09:00AM - 07:00PM</p>
+      </div>
+    </div>
+    <div id="content">
+      <div id="leftcontent">
+        <div id="shippingmethod">
+          <div>
+            <h2>Select a shipping method</h2>
+          </div>
+          <div id="getproduct">
+            <div>
+              <p>Home Delivery</p>
+              <p>Get your product delivered to your home.</p>
+            </div>
+            <div>
+              <p>Click & Collect</p>
+              <p>Collect your order from a store of your choice.</p>
+            </div>
+          </div>
+        </div>
+        <div id="shippingform">
+          <h3>Add your shipping address</h3>
+          <form id="form">
+            <div>
+              <label for="Name">Full Name</label><br />
+              <input
+                id="addingFunctionality"
+                class="checkoutinput"
+                type="text"
+                placeholder="Enter your full name"
+              />
+            </div>
+            <div>
+              <label for="Name">Mobile Number</label><br />
+              <input
+                class="checkoutinput"
+                type="number"
+                placeholder="Enter your Mobile Number"
+              />
+            </div>
+            <div>
+              <label for="pincode">Pincode</label><br />
+              <input
+                class="checkoutinput"
+                type="number"
+                placeholder="Enter your pincode"
+              />
+            </div>
+            <div>
+              <label for="city">City</label><br />
+              <input
+                class="checkoutinput"
+                type="text"
+                placeholder="Enter your City Or Town"
+              />
+            </div>
+            <div>
+              <label for="">Building name or number</label><br />
+              <input
+                class="checkoutinput"
+                type="text"
+                placeholder=" Enter Building Name"
+              />
+            </div>
+            <div>
+              <label for="">Street name or number</label><br />
+              <input
+                class="checkoutinput"
+                type="text"
+                placeholder="Flat/house number,Floor,Building"
+              />
+            </div>
+            <div>
+              <label for="">Landmark</label><br />
+              <input class="checkoutinput" type="text" placeholder="Landmark" />
+            </div>
+            <div>
+              <label for="">Address</label>
+              <div>
+                <label for="">Home</label><input type="radio" />
+                <label for=""></label>Office<input type="radio" />
+              </div>
+            </div>
+          </form>
+        </div>
+        <div>
+          <h2>Select a payment method</h2>
+          <div class="paymentmethod">
+            <div>
+              <input type="radio" />
+              <img
+                height="25px"
+                src="https://i1.lmsin.net/website_images/ae/checkout/card-payment.svg"
+              />
+            </div>
+            <div>
+              <h4>Credit/Debit Card</h4>
+              <p>Use your Credit or Debit card</p>
+            </div>
+          </div>
+          <div class="paymentmethod">
+            <div>
+              <input type="radio" />
+              <img
+                height="35px"
+                src="https://i1.lmsin.net/website_images/in/checkout/logo-emi.png"
+              />
+            </div>
+            <div>
+              <h4>EMI</h4>
+              <p>Available on orders above Rs3,000</p>
+            </div>
+          </div>
+          <div class="paymentmethod">
+            <div>
+              <div>
+                <input type="radio" />
+                <img
+                  height="35px"
+                  src="https://i1.lmsin.net/website_images/ae/checkout/logo-paypal.png"
+                />
+              </div>
+            </div>
+            <div>
+              <h4>PayPal</h4>
+              <p>Pay now with your PayPal account</p>
+            </div>
+          </div>
+          <div class="paymentmethod">
+            <div>
+              <div>
+                <input type="radio" />
+                <img
+                  height="25px"
+                  src="https://i1.lmsin.net/website_images/ae/checkout/logo-cash.png"
+                />
+              </div>
+            </div>
+            <div>
+              <h4>Cash On Delivery</h4>
+              <p>+ Rs49</p>
+            </div>
+          </div>
+          <div class="paymentmethod">
+            <div>
+              <input type="radio" />
+              <img
+                width="70px;"
+                src="https://i1.lmsin.net/website_images/in/checkout/logo-netbanking.svg"
+              />
+            </div>
+            <div>
+              <h4>Net Banking</h4>
+              <p>Pay by your preferred bank account.</p>
+            </div>
+          </div>
+          <div class="paymentmethod">
+            <div>
+              <input type="radio" />
+              <img
+                width="30px"
+                height="30px"
+                ;
+                src="https://i1.lmsin.net/website_images/in/my-account/ico-payment-wallet.png"
+              />
+            </div>
+            <div>
+              <h4>Wallets</h4>
+              <p>Pay with your preferred wallet.</p>
+            </div>
+          </div>
+          <div class="paymentmethod">
+            <div>
+              <input type="radio" />
+              <img src="https://i1.lmsin.net/website_images/payment/upi.png" />
+            </div>
+            <div>
+              <h4>UPI</h4>
+              <p>Pay with your preferred UPI Id.</p>
+            </div>
+          </div>
+          <div class="paymentmethod">
+            <img
+              height="20px"
+              src="https://i1.lmsin.net/website_images/common/images/basket/ico-gift.png"
+            />
+            <p>Got a Promo Code?</p>
+          </div>
+          <div class="paymentmethod">
+            <img
+              height="20px"
+              src="https://i1.lmsin.net/website_images/in/giftcards/gift-card-icon.svg"
+            />
+            <p>Have a gift Card??</p>
+          </div>
+          <div id="paynow">
+            <div>
+              <p>
+                By clicking on Proceed to Payment, you agree to our Terms and
+                Conditions
+              </p>
+            </div>
+            <div>
+              <button id="btnform">Pay Now</button>
+            </div>
+          </div>
+          <!-- Terms of Use - Terms & Conditions -->
+          <div id="terms">
+            <div id="comodo">
+              <div>
+                <img
+                  height="50px"
+                  src="https://i1.lmsin.net/website_images/common/images/logos/logo-comodo.png"
+                />
+              </div>
+              <div>
+                <p>
+                  Your credit card details are securely encrypted and passed
+                  directly to our PCI DSS compliant Payment Gateway for
+                  processing. We only store your credit card's last 4 digits and
+                  the expiration date. Your traffic to this page is secured
+                  using either a 256-bit or 128-bit SSL certificate depending on
+                  your browser version.
+                </p>
+              </div>
+            </div>
+            <div>
+              <p>© 2021 RNA Intellectual Property Limited.</p>
+              <p>Privacy Policy - Terms of Use - Terms & Conditions</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Right side part -->
+      <div id="rightcontent">
+        <div id="ordersummery">
+          <div>
+            <p>Your order summary</p>
+          </div>
+          <div id="productinfo"></div>
+          <div>
+            <p>Subtotal:</p>
+            <p id="price"></p>
+          </div>
+          <div>
+            <p>Standard Ground Shipping:</p>
+            <p>Free</p>
+          </div>
+          <div>
+            <p>Total</p>
+            <p id="total"></p>
+          </div>
+        </div>
+        <div>
+          <p>Ways you can pay:</p>
+          <div id="paymentimage">
+            <div>
+              <img
+                height="35px"
+                src="https://i1.lmsin.net/website_images/ae/checkout/logo-paypal.png"
+              />
+              <img
+                height="20px"
+                src="https://dd311b21463486cea6e6-ba57f67b7c05f7cbe632f35f74bd7340.ssl.cf3.rackcdn.com/Checkout/logo-visa.png"
+              />
+              <img
+                height="20px"
+                src="https://i1.lmsin.net/website_images/ae/checkout/logo-mc.png"
+              />
+              <img
+                height="20px"
+                src="https://i1.lmsin.net/website_images/in/checkout/logo-rupay.svg"
+              />
+              <img
+                height="25px"
+                src="https://i1.lmsin.net/website_images/ae/checkout/logo-cash.png"
+              />
+            </div>
+            <div>
+              <img
+                height="25px"
+                src="https://i1.lmsin.net/website_images/in/checkout/logo-netbanking.svg"
+              />
+              <img
+                height="25px"
+                src="https://i1.lmsin.net/website_images/in/checkout/logo-wallet.svg"
+              />
+              <img
+                height="25px"
+                src="https://i1.lmsin.net/website_images/in/checkout/logo-rewards.svg"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<script>
+  var item = JSON.parse(localStorage.getItem("storecarts"));
+  item.map(function (ele) {
+    var maindiv = document.createElement("div");
+    var imgdiv = document.createElement("div");
+    imgdiv.setAttribute("class", "imgdiv");
+    var img = document.createElement("img");
+    var textdiv = document.createElement("div");
+    textdiv.setAttribute("class", "textdiv");
+    var p1 = document.createElement("p");
+    var p2 = document.createElement("p");
+    var p3 = document.createElement("p");
+
+    img.setAttribute("src", ele.proudimg);
+    imgdiv.append(img);
+
+    p1.textContent = "Max";
+    p2.textContent = ele.prodDesc;
+    p3.textContent = "Price : " + "₹ " + ele.produPrice;
+    textdiv.append(p1, p2, p3);
+
+    maindiv.append(imgdiv, textdiv);
+
+    var productinfo = document.querySelector("#productinfo");
+    productinfo.append(maindiv);
+  });
+  var sum = item.reduce(function (n, m) {
+    return { produPrice: Number(n.produPrice) + Number(m.produPrice) };
+
+    var nameDis = document.querySelector("#addingFunctionality").value;
+  });
+
+  var price = document.querySelector("#price");
+  var total = document.querySelector("#total");
+  price.textContent = "₹ " + sum.produPrice;
+  total.textContent = "₹ " + sum.produPrice;
+
+  //  sri
+
+  document.querySelector("#btnform").addEventListener("click", function () {
+    var displayName = JSON.parse(localStorage.getItem("Displayname"));
+    var nameDis = document.querySelector("#addingFunctionality").value;
+
+    var objName = {
+      nameDisplayon: nameDis,
+    };
+
+    localStorage.setItem("Displayname", JSON.stringify(objName));
+    window.location.href = "orderPplaced.html";
+  });
+</script>
