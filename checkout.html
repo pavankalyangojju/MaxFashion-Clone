@@ -191,15 +191,23 @@
         /* Right side part */
 
         #rightcontent {
-            border: 1px solid teal;
             width: 35%;
             height: 650px;
             padding-left: 10px;
         }
 
+        #ordersummery {
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+            padding: 5px;
+        }
+
         #ordersummery>div {
             padding-bottom: 3px;
-            box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+            box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+        }
+
+        #ordersummery>div:first-child>p {
+            font-size: 18px;
         }
 
 
@@ -245,6 +253,7 @@
             justify-content: space-between;
             padding: 0px 10px;
             font-weight: bold;
+            box-shadow: none;
         }
 
         #paymentimage>div {
