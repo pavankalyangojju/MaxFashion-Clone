@@ -2,9 +2,9 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0" />
     <title>Document</title>
     <style>
         /* font family */
@@ -73,7 +73,6 @@
         #getproduct {
             display: flex;
             gap: 15px;
-
         }
 
         #getproduct>div {
@@ -82,7 +81,7 @@
             margin: auto;
             text-align: center;
             line-height: 10px;
-            box-shadow: rgba(0, 0, 0, 0.10) 0px 0px 0px 1px;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 0px 1px;
         }
 
         #getproduct>div>p:nth-child(1) {
@@ -98,7 +97,6 @@
 
         #shippingform {
             width: 100%;
-
         }
 
         #shippingform>form>div {
@@ -112,7 +110,7 @@
             margin-bottom: 10px;
             padding-left: 15px;
             border: none;
-            box-shadow: rgba(0, 0, 0, 0.10) 0px 0px 0px 1px;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 0px 1px;
         }
 
         /* #shippingform>form>div>label { */
@@ -210,11 +208,8 @@
             font-size: 18px;
         }
 
-
-
         #productinfo>div {
             display: flex;
-
         }
 
         .imgdiv {
@@ -226,7 +221,6 @@
         .imgdiv>img {
             width: 100%;
             height: 90%;
-
         }
 
         .textdiv {
@@ -272,7 +266,7 @@
             <img class="img" src=" https://i1.lmsin.net/website_images/in/logos/header/logo-max.svg" />
         </div>
         <div>
-            <p> Call 1800-123-1444</p>
+            <p>Call 1800-123-1444</p>
             <p>Monday - Saturday, 09:00AM - 07:00PM</p>
         </div>
     </div>
@@ -295,46 +289,44 @@
             </div>
             <div id="shippingform">
                 <h3>Add your shipping address</h3>
-                <form>
+                <form id="form">
                     <div>
-                        <label for="Name">Full Name</label><br>
-                        <input class="checkoutinput" type="text" placeholder="Enter your full name">
+                        <label for="Name">Full Name</label><br />
+                        <input id="addingFunctionality" class="checkoutinput" type="text"
+                            placeholder="Enter your full name" />
                     </div>
                     <div>
-                        <label for="Name">Mobile Number</label><br>
-                        <input class="checkoutinput" type="number" placeholder="Enter your Mobile Number">
+                        <label for="Name">Mobile Number</label><br />
+                        <input class="checkoutinput" type="number" placeholder="Enter your Mobile Number" />
                     </div>
                     <div>
-                        <label for="pincode">Pincode</label><br>
-                        <input class="checkoutinput" type="number" placeholder="Enter your pincode">
+                        <label for="pincode">Pincode</label><br />
+                        <input class="checkoutinput" type="number" placeholder="Enter your pincode" />
                     </div>
                     <div>
-                        <label for="city">City</label><br>
-                        <input class="checkoutinput" type="text" placeholder="Enter your City Or Town">
+                        <label for="city">City</label><br />
+                        <input class="checkoutinput" type="text" placeholder="Enter your City Or Town" />
                     </div>
                     <div>
-                        <label for="">Building name or number</label><br>
-                        <input class="checkoutinput" type="text" placeholder=" Enter Building Name">
+                        <label for="">Building name or number</label><br />
+                        <input class="checkoutinput" type="text" placeholder=" Enter Building Name" />
                     </div>
                     <div>
-                        <label for="">Street name or number</label><br>
-                        <input class="checkoutinput" type="text" placeholder="Flat/house number,Floor,Building">
+                        <label for="">Street name or number</label><br />
+                        <input class="checkoutinput" type="text" placeholder="Flat/house number,Floor,Building" />
                     </div>
                     <div>
-                        <label for="">Landmark</label><br>
-                        <input class="checkoutinput" type="text" placeholder="Landmark">
+                        <label for="">Landmark</label><br />
+                        <input class="checkoutinput" type="text" placeholder="Landmark" />
                     </div>
                     <div>
                         <label for="">Address</label>
                         <div>
-                            <label for="">Home</label><input type="radio">
-                            <label for=""></label>Office<input type="radio">
-
+                            <label for="">Home</label><input type="radio" />
+                            <label for=""></label>Office<input type="radio" />
                         </div>
-
                     </div>
                 </form>
-
             </div>
             <div>
                 <h2>Select a payment method</h2>
@@ -364,7 +356,6 @@
                             <input type="radio" />
                             <img height="35px" src="https://i1.lmsin.net/website_images/ae/checkout/logo-paypal.png" />
                         </div>
-
                     </div>
                     <div>
                         <h4>PayPal</h4>
@@ -386,7 +377,7 @@
                 <div class="paymentmethod">
                     <div>
                         <input type="radio" />
-                        <img width=70px; src="https://i1.lmsin.net/website_images/in/checkout/logo-netbanking.svg" />
+                        <img width="70px;" src="https://i1.lmsin.net/website_images/in/checkout/logo-netbanking.svg" />
                     </div>
                     <div>
                         <h4>Net Banking</h4>
@@ -424,10 +415,13 @@
                 </div>
                 <div id="paynow">
                     <div>
-                        <p>By clicking on Proceed to Payment, you agree to our Terms and Conditions</p>
+                        <p>
+                            By clicking on Proceed to Payment, you agree to our Terms and
+                            Conditions
+                        </p>
                     </div>
                     <div>
-                        <button>Pay Now</button>
+                        <button id="btnform">Pay Now</button>
                     </div>
                 </div>
                 <!-- Terms of Use - Terms & Conditions -->
@@ -438,10 +432,14 @@
                                 src="https://i1.lmsin.net/website_images/common/images/logos/logo-comodo.png" />
                         </div>
                         <div>
-                            <p>Your credit card details are securely encrypted and passed directly to our PCI DSS
-                                compliant Payment Gateway for processing. We only store your credit card's last 4
-                                digits and the expiration date. Your traffic to this page is secured using either a
-                                256-bit or 128-bit SSL certificate depending on your browser version.</p>
+                            <p>
+                                Your credit card details are securely encrypted and passed
+                                directly to our PCI DSS compliant Payment Gateway for
+                                processing. We only store your credit card's last 4 digits and
+                                the expiration date. Your traffic to this page is secured
+                                using either a 256-bit or 128-bit SSL certificate depending on
+                                your browser version.
+                            </p>
                         </div>
                     </div>
                     <div>
@@ -449,27 +447,21 @@
                         <p>Privacy Policy - Terms of Use - Terms & Conditions</p>
                     </div>
                 </div>
-
             </div>
         </div>
         <!-- Right side part -->
         <div id="rightcontent">
             <div id="ordersummery">
                 <div>
-                    <p>
-                        Your order summary
-                    </p>
+                    <p>Your order summary</p>
                 </div>
-                <div id="productinfo">
-                </div>
+                <div id="productinfo"></div>
                 <div>
                     <p>Subtotal:</p>
                     <p id="price"></p>
                 </div>
                 <div>
-                    <p>
-                        Standard Ground Shipping:
-                    </p>
+                    <p>Standard Ground Shipping:</p>
                     <p>Free</p>
                 </div>
                 <div>
@@ -492,7 +484,6 @@
                         <img height="25px" src="https://i1.lmsin.net/website_images/in/checkout/logo-netbanking.svg" />
                         <img height="25px" src="https://i1.lmsin.net/website_images/in/checkout/logo-wallet.svg" />
                         <img height="25px" src="https://i1.lmsin.net/website_images/in/checkout/logo-rewards.svg" />
-
                     </div>
                 </div>
             </div>
@@ -503,43 +494,53 @@
 </html>
 
 <script>
-
-
-    var item = JSON.parse(localStorage.getItem('storecarts'))
+    var item = JSON.parse(localStorage.getItem("storecarts"));
     item.map(function (ele) {
-        var maindiv = document.createElement('div');
+        var maindiv = document.createElement("div");
         var imgdiv = document.createElement("div");
-        imgdiv.setAttribute('class', 'imgdiv')
-        var img = document.createElement('img');
-        var textdiv = document.createElement('div');
-        textdiv.setAttribute('class', 'textdiv')
-        var p1 = document.createElement('p');
-        var p2 = document.createElement('p');
-        var p3 = document.createElement('p');
+        imgdiv.setAttribute("class", "imgdiv");
+        var img = document.createElement("img");
+        var textdiv = document.createElement("div");
+        textdiv.setAttribute("class", "textdiv");
+        var p1 = document.createElement("p");
+        var p2 = document.createElement("p");
+        var p3 = document.createElement("p");
 
-        img.setAttribute('src', ele.proudimg);
+        img.setAttribute("src", ele.proudimg);
         imgdiv.append(img);
 
-        p1.textContent = "Max"
+        p1.textContent = "Max";
         p2.textContent = ele.prodDesc;
         p3.textContent = "Price : " + "₹ " + ele.produPrice;
         textdiv.append(p1, p2, p3);
 
-
         maindiv.append(imgdiv, textdiv);
 
-        var productinfo = document.querySelector('#productinfo');
+        var productinfo = document.querySelector("#productinfo");
         productinfo.append(maindiv);
-
-    })
+    });
     var sum = item.reduce(function (n, m) {
-        return { produPrice: Number(n.produPrice) + Number(m.produPrice) }
-    })
+        return { produPrice: Number(n.produPrice) + Number(m.produPrice) };
 
-    var price = document.querySelector('#price');
-    var total = document.querySelector('#total');
+        var nameDis = document.querySelector("#addingFunctionality").value;
+    });
+
+    var price = document.querySelector("#price");
+    var total = document.querySelector("#total");
     price.textContent = "₹ " + sum.produPrice;
     total.textContent = "₹ " + sum.produPrice;
 
+    //  sri
 
+    document.querySelector("#btnform").addEventListener("click", function () {
+        var displayName = JSON.parse(localStorage.getItem("Displayname"));
+        var nameDis = document.querySelector("#addingFunctionality").value;
+
+        var objName = {
+            nameDisplayon: nameDis,
+        };
+
+        localStorage.setItem("Displayname", JSON.stringify(objName));
+        window.location.href = "orderPplaced.html";
+    });
 </script>
