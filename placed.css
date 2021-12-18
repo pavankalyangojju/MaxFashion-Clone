@@ -1,0 +1,62 @@
+#placed {
+    width: 700px;
+}
+
+#tick {
+    display: inline-flex;
+    height: 80px;
+    width: auto;
+}
+
+#greet {
+    display: inline-flex;
+    margin-top: -10px;
+    margin-left: 15px;
+    font-family: sans-serif;
+}
+
+#orderNo {
+    font-family: sans-serif;
+    color: grey;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+#idNo {
+    color: blue;
+    font-family: sans-serif;
+}
+
+#time {
+    font-family: sans-serif;
+    color: grey;
+}
+
+#grin {
+    color: rgb(10, 199, 10);
+    font-weight: bolder;
+    font-family: sans-serif;
+}
+
+#scratch {
+    height: 65px;
+    display: inline-block;
+}
+
+#disc {
+    display: inline-block;
+    margin-left: 15px;
+    font-family: sans-serif;
+    color: grey;
+}
+
+hr {
+    color: grey;
+}
+
+#bag {
+    position: absolute;
+    margin-left: 800px;
+    height: auto;
+    width: auto;
+}
