@@ -368,7 +368,7 @@ function displayItems(product) {
     productbutton.addEventListener("click", gotocarts);
 
     function gotocarts() {
-      
+
 
       console.log("here");
       mybasketarray.push(ele);
@@ -464,6 +464,24 @@ function discountarr() {
   }
   displayItems(sortedarr);
 }
+
+function pricesortchange() {
+  var priceaftersortedarray = [];
+  var browse = document.querySelector("#pricepurpose").value;
+
+  if (browse == "high") {
+    dataOfProduct.sort((a, b) => b.produPrice - a.produPrice)
+    displayItems(dataOfProduct)
+  }
+  if (browse == "low") {
+    dataOfProduct.sort((a, b) => a.produPrice - b.produPrice)
+    displayItems(dataOfProduct)
+  }
+  console.log(dataOfProduct)
+
+
+}
+
 
 document.querySelector(".b").addEventListener("click", basketgo);
 
@@ -590,7 +608,7 @@ function functionNotdisplay0() {
 
 
 document.querySelector(".basketvalue").textContent = mybasketarray.length;
-document.querySelector(".b").style. cursor = "pointer";
+document.querySelector(".b").style.cursor = "pointer";
 
 
 
