@@ -831,6 +831,7 @@ button {
   background-image: url("https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/MAX-Friday/MAX2.O/MAX-Banner1-desktop-Common-14Dec2021.gif");
   background-size: 100% 100%;
   animation: slider 15s infinite linear;
+  margin-top:20px;
 }
 
 #budgetzone {
@@ -1141,8 +1142,15 @@ table {
 }
 
 /* maggie  */
+#hoverover{
+  margin-top: 200px;
+}
 #header {
   display: grid;
+  position:fixed;
+  width:100%;
+  overflow: hidden;
+  top: 0;
 }
 #header #first {
   height: 40px;
@@ -1190,3 +1198,26 @@ table {
   padding-left: 60px;
   padding-right: 60px;
 }
+#basketflex{
+  display: flex;
+   
+    color: white;
+    width: 40px;
+    height: auto;
+   
+    
+}
+#basketflex>div{
+ 
+    background-color: red;
+    color: white;
+    height: 20px;
+    font-size: 16px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%; 
+    padding:5px;
+}
+

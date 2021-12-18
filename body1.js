@@ -251,3 +251,8 @@ document.querySelector(".b").addEventListener("click", gotobasketwala);
 function gotobasketwala() {
   window.location.href = "cart.html";
 }
+
+// add to cart part
+var mybasketarray = JSON.parse(localStorage.getItem("storecarts"))
+document.querySelector(".basketvalue").textContent = mybasketarray.length;
+

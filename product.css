@@ -972,16 +972,16 @@ table {
 /* maggie  */
 #header {
   display: grid;
-}
-#header #first {
-  height: 40px;
-}
-#sticky{
   position:fixed;
   width:100%;
   overflow: hidden;
   top: 0;
+  
 }
+#header #first {
+  height: 40px;
+}
+  
 /* #header #first > div {
 } */
 #header #first > div > div {
