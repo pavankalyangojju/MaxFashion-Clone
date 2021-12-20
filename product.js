@@ -31,7 +31,7 @@ function inputfunction(event) {
   var box5 = document.querySelector("#inputnumber5").value;
 
   if (box1 == 0 && box2 == 3 && box3 == 3 && box4 == 5 && box5 == 1) {
-    window.location.href = "vineeth.html";
+    window.location.href = "product.html";
   }
 }
 
@@ -333,7 +333,7 @@ var dataOfProduct = [
 ];
 displayItems(dataOfProduct);
 var mybasketarray = JSON.parse(localStorage.getItem("storecarts")) || [];
-console.log(mybasketarray)
+console.log(mybasketarray);
 
 function displayItems(product) {
   document.querySelector("#allProduct").textContent = "";
@@ -368,8 +368,6 @@ function displayItems(product) {
     productbutton.addEventListener("click", gotocarts);
 
     function gotocarts() {
-
-
       console.log("here");
       mybasketarray.push(ele);
       localStorage.setItem("storecarts", JSON.stringify(mybasketarray));
@@ -470,19 +468,15 @@ function pricesortchange() {
   var browse = document.querySelector("#pricepurpose").value;
 
   if (browse == "high") {
-    dataOfProduct.sort((a, b) => b.produPrice - a.produPrice)
-    displayItems(dataOfProduct)
+    dataOfProduct.sort((a, b) => b.produPrice - a.produPrice);
+    displayItems(dataOfProduct);
   }
   if (browse == "low") {
-    dataOfProduct.sort((a, b) => a.produPrice - b.produPrice)
-    displayItems(dataOfProduct)
+    dataOfProduct.sort((a, b) => a.produPrice - b.produPrice);
+    displayItems(dataOfProduct);
   }
-  console.log(dataOfProduct)
-
-
+  console.log(dataOfProduct);
 }
-
-
 
 document.querySelector(".b").addEventListener("click", basketgo);
 
@@ -607,12 +601,7 @@ function functionNotdisplay0() {
 }
 // NEW THINGS
 
-
 document.querySelector(".basketvalue").textContent = mybasketarray.length;
 document.querySelector(".b").style.cursor = "pointer";
 
-
-
-
 // hovering end by srinidhi
-
