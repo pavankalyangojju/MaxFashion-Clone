@@ -253,6 +253,5 @@ function gotobasketwala() {
 }
 
 // add to cart part
-var mybasketarray = JSON.parse(localStorage.getItem("storecarts"))
+var mybasketarray = JSON.parse(localStorage.getItem("storecarts"));
 document.querySelector(".basketvalue").textContent = mybasketarray.length;
-
