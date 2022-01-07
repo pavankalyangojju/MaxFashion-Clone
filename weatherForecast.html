@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-image: url("https://cdn.pixabay.com/photo/2012/06/08/06/19/clouds-49520_960_720.jpg");
+            display: flex;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: auto;
+        }
+
+        #city {
+            margin: 10px;
+            height: 40px;
+            width: 270px;
+            border-radius: 5px;
+            border-style: none;
+            text-align: center;
+            font-family: sans-serif;
+            font-size: large;
+        }
+
+        #btn {
+            margin: 5px;
+            height: 30px;
+            width: 120px;
+            border-radius: 5px;
+            border-style: none;
+            text-align: center;
+            font-family: sans-serif;
+            font-size: smaller;
+        }
+
+        #map {
+            display: inline-block;
+        }
+
+        #data {
+            display: inline-block;
+            width: 350px;
+        }
+
+        #data>div {
+            background-color: white;
+            color: black;
+            font-family: sans-serif;
+            font-weight: bolder;
+            font-size: larger;
+            margin: 10%;
+            text-align: center;
+        }
+
+        #btn:hover {
+            background: #ff96ad;
+            box-shadow: 0 0 5px #ff96ad, 0 0 25px #ff96ad, 0 0 50px #ff96ad, 0 0 200px #ff96ad;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="header">
+            <input type="text" placeholder="Enter your City name" id="city">
+            <button id="btn" onclick="weatherDetails()">Get Details</button>
+        </div>
+        <br><br>
+        <span id="data"></span>
+        <span id="map"></span>
+    </div>
+</body>
+
+</html>
+<script>
+    // url - api.openweathermap.org / data / 2.5 / weather ? q = { city name } & appid={API key }
+    // acb8197d3e00b8461f4ced69e193664e API key 
+
+    // < !-- // Google API Key- AIzaSyDp8VuBJPwvrtzuJ1p8eYGOb92Mi5ENo2Q  -->
+
+    async function weatherDetails() {
+
+        try {
+            let cityName = document.getElementById("city").value;
+
+            let url = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=acb8197d3e00b8461f4ced69e193664e&units=metric`;
+
+            document.getElementById("map").innerHTML = `<iframe
+            width="600"
+            height="450"
+            style="border:0"
+            loading="lazy"
+            allowfullscreen
+            src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDp8VuBJPwvrtzuJ1p8eYGOb92Mi5ENo2Q&q=${cityName}">
+            </iframe>`
+
+            let res = await fetch(url);
+            let data = await res.json();
+            finalWeather(data);
+            console.log(data);
+        }
+
+        catch (err) {
+            console.log(`Hey, I am back! ${err}`);
+        }
+    }
+
+    function finalWeather(wthr) {
+
+        document.getElementById("data").innerText = "";
+
+        let div = document.createElement("div");
+
+        let temprature = document.createElement("p");
+        temprature.innerText = `Temprature: ${wthr.main.temp}° C`;
+
+        let name = document.createElement("p");
+        name.innerText = `Location: ${wthr.name}`;
+
+        let max = document.createElement("p");
+        max.innerText = `Max Temp: ${wthr.main.temp_max}° C`;
+
+        let min = document.createElement("p");
+        min.innerText = `Min Temp: ${wthr.main.temp_min}° C`;
+
+        let pressure = document.createElement("p");
+        pressure.innerText = `Pressure: ${wthr.main.pressure}`;
+
+        div.append(name, temprature, max, min, pressure);
+        document.getElementById("data").append(div);
+    }
+</script>
