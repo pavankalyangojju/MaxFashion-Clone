@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!-- saved from url=(0048)https://lms.masaischool.com/files/53511/download -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            
+            width: 450px;
+            height: 300px;
+            display: flex;
+           
+        }
+        div>div{
+            
+            display: grid;
+        height: 90%;
+        margin: 10px;
+        box-sizing: border-box;
+           
+           
+           
+        }
+        img{
+        }
+        button{
+            width: 140px;
+            border-radius: 10px;
+            background-color: blue;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    
+
+
+
+<script>
+        var div=document.createElement("div");
+        var bodytag=document.querySelector("body");
+        var image=document.createElement("img");
+        image.setAttribute("src","https://via.placeholder.com/200x300")
+
+        var div2= document.createElement("div");
+        var h1=document.createElement("h1");
+        var p=document.createElement("p");
+        var button=document.createElement("button");
+       
+       
+        h1.textContent="Alice Lideel";
+        p.textContent="Alice is a free lancer website and developer based in london.she is  specalised in Html5,Css3,Javascript,Bootstrap,etc.."
+        button.textContent="viewprofile";
+        bodytag.append(div);
+        div.append(image,div2)
+        div2.append(h1,p,button)
+    
+       
+       
+
+</script><div><img src="./alice_files/200x300"><div><h1>Alice Lideel</h1><p>Alice is a free lancer website and developer based in london.she is  specalised in Html5,Css3,Javascript,Bootstrap,etc..</p><button>viewprofile</button></div></div></body></html>
